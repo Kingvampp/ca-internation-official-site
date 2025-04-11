@@ -58,5 +58,8 @@
         }
       ]
     }
-  ]
+  ],
+  "build": {
+    "command": "next build"
+  }
 } 
