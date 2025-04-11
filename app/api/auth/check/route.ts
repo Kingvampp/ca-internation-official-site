@@ -1,5 +1,10 @@
+import { cookies } from 'next/headers';
+import { verify } from 'jsonwebtoken';
 import { NextRequest, NextResponse } from 'next/server';
 import { authenticateAdmin } from '../../../../utils/authMiddleware';
+
+// Ensure this route is always treated as dynamic
+export const dynamic = 'force-dynamic';
 
 // GET /api/auth/check - Check if user is authenticated
 export async function GET(request: NextRequest) {
