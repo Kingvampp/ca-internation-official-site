@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run vercel-build",
+  "buildCommand": "next build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
@@ -58,8 +58,5 @@
         }
       ]
     }
-  ],
-  "build": {
-    "command": "next build"
-  }
+  ]
 } 
