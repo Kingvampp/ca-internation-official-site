@@ -1,0 +1,626 @@
+"use client";
+
+import React, { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaComments, FaTimes, FaPhone, FaCalendarAlt } from 'react-icons/fa';
+import { IoMdSend } from 'react-icons/io';
+import { RiRobot2Fill } from 'react-icons/ri';
+import Image from 'next/image';
+import { useLanguage } from "../../utils/LanguageContext";
+
+// Define types for rich message content
+type MessageButton = {
+  label: string;
+  action: 'call' | 'book' | 'link' | 'chat';
+  value: string;
+};
+
+type MessageTable = {
+  headers: string[];
+  rows: string[][];
+};
+
+type RichContent = {
+  text: string;
+  buttons?: MessageButton[];
+  table?: MessageTable;
+};
+
+type Message = {
+  text: string;
+  richContent?: RichContent;
+  sender: 'user' | 'ai';
+  timestamp: Date;
+};
+
+type ChatMessage = {
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+};
+
+const ChatWidget: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      text: "Hello! Welcome to CA International Autobody. How can I help you today?",
+      sender: 'ai',
+      timestamp: new Date(),
+    },
+  ]);
+  const [chatHistory, setChatHistory] = useState<ChatMessage[]>([
+    {
+      role: 'assistant',
+      content: "Hello! Welcome to CA International Autobody. How can I help you today?",
+    }
+  ]);
+  const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isPulsing, setIsPulsing] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const messageContainerRef = useRef<HTMLDivElement>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+  
+  const toggleChat = () => {
+    setIsOpen(!isOpen);
+    if (!isOpen) {
+      setIsPulsing(false);
+    }
+  };
+  
+  const handleInputChange = (e: { target: { value: string } }) => {
+    setInput(e.target.value);
+  };
+
+  // Reset pulsing animation after 10 seconds of inactivity
+  useEffect(() => {
+    if (!isOpen) {
+      const timer = setTimeout(() => {
+        setIsPulsing(true);
+      }, 10000);
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]);
+
+  // Scroll to bottom of messages when new message is added
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages]);
+  
+  const sendChatRequest = async (userInput: string) => {
+    try {
+      setError(null);
+      // Add the new user message to chat history
+      const updatedHistory = [
+        ...chatHistory,
+        { role: 'user' as const, content: userInput }
+      ];
+      
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          messages: updatedHistory,
+        }),
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Server responded with ${response.status}: ${response.statusText}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+      
+      // Update chat history with AI response
+      setChatHistory([
+        ...updatedHistory,
+        { role: 'assistant' as const, content: data.message }
+      ]);
+      
+      return data.message;
+    } catch (error) {
+      console.error('Error sending chat message:', error);
+      setError('Sorry, there was a problem connecting to our assistant. Please try again or call us directly.');
+      throw error;
+    }
+  };
+  
+  // Helper function to parse for rich content in AI messages
+  const parseRichContent = (message: string): RichContent | null => {
+    const { t } = useLanguage();
+    // Check if the message contains rich content markers
+    if (!message.includes('[phone:') && !message.includes('[table:') && !message.includes('[book:') && !message.includes('[chat:')) {
+      return null;
+    }
+
+    let richContent: RichContent = { text: message };
+    const buttons: MessageButton[] = [];
+    
+    // Extract phone numbers
+    const phoneRegex = /\[phone:\s*(\(\d{3}\)\s*\d{3}-\d{4}|.*?)\]/g;
+    let phoneMatch;
+    while ((phoneMatch = phoneRegex.exec(message)) !== null) {
+      buttons.push({
+        label: phoneMatch[1],
+        action: 'call',
+        value: `tel:${phoneMatch[1].replace(/[\(\)\s-]/g, '')}`
+      });
+      richContent.text = richContent.text.replace(phoneMatch[0], '');
+    }
+    
+    // Extract booking buttons
+    const bookRegex = /\[book:\s*(.*?)\]/g;
+    let bookMatch;
+    while ((bookMatch = bookRegex.exec(message)) !== null) {
+      buttons.push({
+        label: bookMatch[1],
+        action: 'book',
+        value: bookMatch[1]
+      });
+      richContent.text = richContent.text.replace(bookMatch[0], '');
+    }
+    
+    // Extract chat flow buttons
+    const chatRegex = /\[chat:\s*(.*?)\]/g;
+    let chatMatch;
+    while ((chatMatch = chatRegex.exec(message)) !== null) {
+      buttons.push({
+        label: chatMatch[1],
+        action: 'chat',
+        value: chatMatch[1]
+      });
+      richContent.text = richContent.text.replace(chatMatch[0], '');
+    }
+    
+    // Extract link buttons
+    const linkRegex = /\[link:\s*(.*?)\|(.*?)\]/g;
+    let linkMatch;
+    while ((linkMatch = linkRegex.exec(message)) !== null) {
+      buttons.push({
+        label: linkMatch[1],
+        action: 'link',
+        value: linkMatch[2]
+      });
+      richContent.text = richContent.text.replace(linkMatch[0], '');
+    }
+    
+    // Extract tables
+    const tableRegex = /\[table:start\]([\s\S]*?)\[table:end\]/g;
+    const tableMatch = tableRegex.exec(message);
+    if (tableMatch) {
+      const tableContent = tableMatch[1].trim();
+      const rows = tableContent.split('\n').map(row => 
+        row.split('|').map(cell => cell.trim())
+      );
+      
+      if (rows.length >= 2) { // At least header and one data row
+        richContent.table = {
+          headers: rows[0],
+          rows: rows.slice(1)
+        };
+      }
+      
+      richContent.text = richContent.text.replace(tableMatch[0], '');
+    }
+    
+    if (buttons.length > 0) {
+      richContent.buttons = buttons;
+    }
+    
+    // Clean up the remaining text
+    richContent.text = richContent.text.trim();
+    
+    return richContent;
+  };
+
+  // Function to handle booking action
+  const handleBooking = (service: string) => {
+    // Here you would implement your booking logic
+    window.open(`/booking?service=${encodeURIComponent(service)}`, '_blank');
+  };
+
+  // Function to handle chat flow button clicks
+  const handleChatButton = (value: string) => {
+    // Simulate user typing the selected option
+    setInput(value);
+    // Submit the form
+    handleSubmit({ preventDefault: () => {} });
+  };
+
+  // Modify the handleSubmit function to parse rich content
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    if (!input.trim()) return;
+    
+    // Add user message
+    const userMessage: Message = {
+      text: input,
+      sender: 'user',
+      timestamp: new Date(),
+    };
+    
+    setMessages(prev => [...prev, userMessage]);
+    setInput('');
+    setIsLoading(true);
+    
+    try {
+      // Get AI response from API
+      const response = await sendChatRequest(input);
+      
+      // Check for rich content
+      const richContent = parseRichContent(response);
+      
+      // Add AI response
+      const aiMessage: Message = {
+        text: richContent ? richContent.text : response,
+        richContent: richContent || undefined,
+        sender: 'ai',
+        timestamp: new Date(),
+      };
+      
+      setMessages(prev => [...prev, aiMessage]);
+    } catch (error) {
+      console.error('Error in chat:', error);
+      // Error is already set by sendChatRequest
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  
+  // Animation variants for button
+  const pulseAnimation = {
+    scale: [1, 1.05, 1],
+    boxShadow: [
+      '0 0 0 0 rgba(59, 130, 246, 0.7)',
+      '0 0 0 10px rgba(59, 130, 246, 0)',
+      '0 0 0 0 rgba(59, 130, 246, 0)'
+    ],
+    transition: {
+      repeat: Infinity,
+      duration: 2,
+    }
+  };
+
+  const buttonVariants = {
+    initial: { scale: 0.8, opacity: 0 },
+    animate: { scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 300, damping: 20 } },
+    exit: { scale: 0.8, opacity: 0, transition: { duration: 0.2 } },
+    hover: { scale: 1.1, transition: { type: 'spring', stiffness: 400, damping: 10 } },
+    tap: { scale: 0.9, transition: { duration: 0.1 } },
+  };
+
+  const chatWindowVariants = {
+    hidden: { opacity: 0, y: 20, scale: 0.95 },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1,
+      transition: { 
+        type: 'spring', 
+        stiffness: 400, 
+        damping: 25,
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      } 
+    },
+    exit: { 
+      opacity: 0, 
+      y: 20, 
+      scale: 0.95, 
+      transition: { duration: 0.2 } 
+    }
+  };
+
+  const messageVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 200 } }
+  };
+  
+  // Render the message content - Improving the styling
+  const renderMessageContent = (message: Message) => {
+    const { t } = useLanguage();
+    // Check if it's a "Book with us:" message
+    const isBookingInfo = message.text.includes('Book with us:');
+    
+    return (
+      <div className={`text-sm leading-relaxed ${isBookingInfo ? 'booking-options' : ''}`}>
+        {message.text.split('\n').map((line, i) => (
+          <p key={i} className={i > 0 ? 'mt-2' : ''}>
+            {line}
+          </p>
+        ))}
+        
+        {/* Render action buttons if available */}
+        {message.richContent?.buttons && message.richContent.buttons.length > 0 && (
+          <div className={`mt-3 flex ${isBookingInfo ? 'flex-col space-y-2' : 'flex-wrap gap-2'}`}>
+            {message.richContent.buttons.map((button, i) => {
+              if (button.action === 'call') {
+                return (
+                  <a 
+                    key={i}
+                    href={button.value}
+                    className={`flex items-center justify-center ${isBookingInfo ? 'bg-green-500 hover:bg-green-600 w-full py-3' : 'bg-green-500 hover:bg-green-600 py-1 px-3'} text-white rounded-full transition-colors`}
+                  >
+                    <span className="mr-2"><FaPhone size={isBookingInfo ? 16 : 10} /></span>
+                    {isBookingInfo ? `Call ${button.label}` : button.label}
+                  </a>
+                );
+              } else if (button.action === 'book') {
+                return (
+                  <button
+                    key={i}
+                    onClick={() => handleBooking(button.value)}
+                    className={`flex items-center justify-center ${isBookingInfo ? 'bg-blue-500 hover:bg-blue-600 w-full py-3' : 'bg-blue-500 hover:bg-blue-600 py-1 px-3'} text-white rounded-full transition-colors`}
+                  >
+                    <span className="mr-2"><FaCalendarAlt size={isBookingInfo ? 16 : 10} /></span>
+                    {button.label}
+                  </button>
+                );
+              } else if (button.action === 'chat') {
+                return (
+                  <button
+                    key={i}
+                    onClick={() => handleChatButton(button.value)}
+                    className={`flex items-center justify-center ${isBookingInfo ? 'bg-purple-500 hover:bg-purple-600 w-full py-3' : 'bg-purple-500 hover:bg-purple-600 py-1 px-3'} text-white rounded-full transition-colors`}
+                  >
+                    <span className="mr-2"><FaComments size={isBookingInfo ? 16 : 10} /></span>
+                    {button.label}
+                  </button>
+                );
+              } else {
+                return (
+                  <a
+                    key={i}
+                    href={button.value}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center ${isBookingInfo ? 'w-full justify-center py-2' : ''} bg-gray-500 hover:bg-gray-600 text-white text-xs py-1 px-3 rounded-full transition-colors`}
+                  >
+                    {button.label}
+                  </a>
+                );
+              }
+            })}
+          </div>
+        )}
+        
+        {/* Render table if available */}
+        {message.richContent?.table && (
+          <div className="mt-3 mb-2 bg-gray-50 rounded-lg overflow-x-auto">
+            <table className="w-full text-xs border-collapse">
+              <thead className="bg-blue-50">
+                <tr>
+                  {message.richContent.table.headers.map((header, i) => (
+                    <th key={i} className="border border-gray-200 px-2 py-1 text-left">
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {message.richContent.table.rows.map((row, i) => (
+                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    {row.map((cell, j) => (
+                      <td key={j} className="border border-gray-200 px-2 py-1">
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        
+        <span className={`text-xs block mt-1 text-right ${
+          message.sender === 'user' ? 'text-blue-100' : 'text-gray-500'
+        }`}>
+          {message.timestamp.toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+          })}
+        </span>
+      </div>
+    );
+  };
+
+  return (
+    <div className="fixed bottom-6 right-6 z-50">
+      {/* Notification dot - keeping it outside the button */}
+      {!isOpen && isPulsing && (
+        <motion.div 
+          className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full z-20"
+          animate={{ scale: [1, 1.2, 1] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+        />
+      )}
+
+      {/* Chat toggle button - updating size and adding a label */}
+      <motion.button
+        className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full p-4 shadow-lg flex items-center justify-center z-10 min-w-[60px] min-h-[60px]"
+        onClick={toggleChat}
+        variants={buttonVariants}
+        initial="initial" 
+        animate={isPulsing && !isOpen ? pulseAnimation : "animate"}
+        whileHover="hover"
+        whileTap="tap"
+        aria-label={isOpen ? "Close chat" : "Open chat"}
+      >
+        <AnimatePresence mode="wait">
+          {isOpen ? (
+            <motion.div
+              key="close"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <FaTimes size={24} />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="chat"
+              initial={{ rotate: 0, opacity: 1 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: -90, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="flex flex-col items-center"
+            >
+              <FaComments size={24} />
+              <span className="text-xs mt-1 font-medium">{useLanguage().t('common.chat')}</span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.button>
+      
+      {/* Chat window */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="absolute bottom-16 right-0 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200"
+            variants={chatWindowVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            {/* Chat header */}
+            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 flex items-center">
+              <div className="relative w-10 h-10 mr-3 rounded-full overflow-hidden border-2 border-white flex items-center justify-center bg-white">
+                <Image 
+                  src="/images/logo/ca-logo.png" 
+                  alt={useLanguage().t('common.ca.international.aut')} 
+                  width={32}
+                  height={32}
+                  className="object-contain"
+                  onError={(e) => {
+                    // Fallback if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = 'CA';
+                  }}
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-semibold text-lg">{useLanguage().t('common.ca.automotive.assist')}</h3>
+                <div className="flex items-center">
+                  <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                  <p className="text-xs opacity-90">{useLanguage().t('common.online.aipowered.sup')}</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Chat messages - updated to handle rich content */}
+            <div className="h-96 overflow-y-auto p-4 bg-gray-50" ref={messageContainerRef}>
+              <motion.div variants={chatWindowVariants}>
+                {messages.map((message, index) => (
+                  <motion.div
+                    key={index}
+                    variants={messageVariants}
+                    className={`mb-4 ${
+                      message.sender === 'user' ? 'text-right' : 'text-left'
+                    }`}
+                  >
+                    <div
+                      className={`inline-block max-w-[80%] rounded-2xl px-4 py-2 shadow-sm ${
+                        message.sender === 'user'
+                          ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white'
+                          : 'bg-white text-gray-800 border border-gray-200'
+                      }`}
+                    >
+                      {message.sender === 'ai' && (
+                        <div className="flex items-center mb-1">
+                          <span className="text-blue-500 mr-1">
+                            <RiRobot2Fill size={16} />
+                          </span>
+                          <span className="text-xs font-semibold text-blue-500">{useLanguage().t('common.autobody.ai')}</span>
+                        </div>
+                      )}
+                      {renderMessageContent(message)}
+                    </div>
+                  </motion.div>
+                ))}
+                {isLoading && (
+                  <motion.div 
+                    className="flex items-center text-left mb-4"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                  >
+                    <div className="bg-white text-gray-800 rounded-2xl px-4 py-2 inline-flex items-center shadow-sm border border-gray-200">
+                      <div className="flex space-x-1 items-center">
+                        <motion.div
+                          className="w-2 h-2 bg-blue-600 rounded-full"
+                          animate={{ scale: [1, 1.2, 1] }}
+                          transition={{ repeat: Infinity, duration: 0.6, delay: 0 }}
+                        />
+                        <motion.div
+                          className="w-2 h-2 bg-blue-600 rounded-full"
+                          animate={{ scale: [1, 1.2, 1] }}
+                          transition={{ repeat: Infinity, duration: 0.6, delay: 0.2 }}
+                        />
+                        <motion.div
+                          className="w-2 h-2 bg-blue-600 rounded-full"
+                          animate={{ scale: [1, 1.2, 1] }}
+                          transition={{ repeat: Infinity, duration: 0.6, delay: 0.4 }}
+                        />
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+                {error && (
+                  <div className="text-center my-4">
+                    <p className="text-red-500 text-sm">{error}</p>
+                    <button
+                      onClick={() => setError(null)} 
+                      className="text-blue-500 text-xs mt-1 hover:underline"
+                    >
+                      {useLanguage().t('common.dismiss')}
+                    </button>
+                  </div>
+                )}
+                <div ref={messagesEndRef} />
+              </motion.div>
+            </div>
+            
+            {/* Chat input */}
+            <motion.form 
+              onSubmit={handleSubmit} 
+              className="border-t border-gray-200 p-3 flex items-center bg-white"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <input
+                type="text"
+                value={input}
+                onChange={handleInputChange}
+                placeholder="Type your message..."
+                className="flex-1 border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50"
+                disabled={isLoading}
+              />
+              <motion.button
+                type="submit"
+                className={`ml-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full p-3 flex items-center justify-center ${
+                  isLoading || !input.trim() ? 'opacity-50 cursor-not-allowed' : 'hover:from-blue-500 hover:to-blue-600'
+                }`}
+                disabled={isLoading || !input.trim()}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label={useLanguage().t('common.send.message')}
+              >
+                <IoMdSend size={18} />
+              </motion.button>
+            </motion.form>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default ChatWidget;

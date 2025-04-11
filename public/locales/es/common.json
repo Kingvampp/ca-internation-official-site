@@ -1,0 +1,1382 @@
+{
+  "0": "0 && (",
+  "site": {
+    "title": "CA International Autobody",
+    "description": "Servicios premium de reparación y restauración de automóviles",
+    "keywords": "reparación de autos, reparación de colisiones, restauración, servicios de pintura, taller de carrocería",
+    "name": "CA International Automotive"
+  },
+  "navigation": {
+    "4474001": "(415) 447-4001",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "admin": "Admin",
+    "dashboard": "Panel de Control",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "ca": {
+      "aut": "CA International Autobody"
+    },
+    "us": "Llámanos",
+    "now": "Reservar ahora",
+    "book.now": "Reservar Ahora",
+    "call": {
+      "us": "Llámanos"
+    },
+    "415": {
+      "4474001": "(415) 447-4001"
+    },
+    "there": {
+      "was": {
+        "an": {
+          "p": "Hubo un error procesando su reserva. Por favor intente de nuevo o contáctenos directamente."
+        }
+      }
+    },
+    "information": "Información",
+    "our": {
+      "team": {
+        "will": {
+          "contac": "Nuestro equipo le contactará para confirmar los detalles de su cita."
+        }
+      }
+    },
+    "return": {
+      "home": "Regresar al Inicio"
+    },
+    "explore": {
+      "services": "Explorar Nuestros Servicios"
+    },
+    "testimonials": "Testimonios",
+    "blog": "Blog",
+    "call.us": "Llámanos",
+    "book.now": "Reservar ahora",
+    "ca.international.aut": "CA International Autobody",
+    "415.4474001": "(415) 447-4001",
+    "return.to.home": "Regresar al Inicio",
+    "explore.our.services": "Explorar Nuestros Servicios",
+    "book": {
+      "now": "Reservar Ahora"
+    }
+  },
+  "hero": {
+    "title": "Excelencia en Auto",
+    "titleHighlight": "Restauración",
+    "subtitle": "Servicio profesional con atención al detalle para vehículos de lujo y alto rendimiento.",
+    "exploreServices": "Explorar Servicios",
+    "bookNow": "Reservar Ahora",
+    "viewImage": "Ver Imagen",
+    "alt1": "CA International Autobody - Reparación de Vehículos de Lujo",
+    "alt2": "CA International Autobody - Servicios Profesionales de Pintura",
+    "alt3": "CA International Autobody - Restauración Experta de Vehículos"
+  },
+  "services": {
+    "at": {
+      "ca": {
+        "": "En CA International Autobody, ofrecemos una amplia gama de servicios automotrices, desde reparación de colisiones hasta trabajos de pintura personalizados y restauración de autos clásicos. Nuestros técnicos capacitados utilizan la última tecnología y materiales premium para ofrecer resultados excepcionales."
+      }
+    },
+    "give": {
+      "us": {
+        "a": {
+          "41568": "Llámenos (415-689-7200)"
+        }
+      }
+    },
+    "appointment": "Reservar Cita",
+    "choose": "Por qué Elegirnos",
+    "choose.us": "Elíjanos",
+    "why": "Por qué",
+    "commitment": "Estamos comprometidos a proporcionar el servicio de la más alta calidad y la satisfacción del cliente.",
+    "international": "CA International",
+    "were": {
+      "committed": {
+        "pr": "Estamos comprometidos a proporcionar el servicio de la más alta calidad y la satisfacción del cliente"
+      }
+    },
+    "benefits": {
+      "warranty": "Garantía de por Vida",
+      "warranty.desc": "Respaldamos nuestro trabajo con una garantía de por vida en todas las reparaciones y servicios de pintura durante todo el tiempo que sea propietario de su vehículo.",
+      "turnaround": "Tiempo de Entrega Rápido",
+      "turnaround.desc": "Entendemos que estar sin su vehículo es inconveniente. Nuestros procesos eficientes aseguran el tiempo de entrega más rápido posible sin comprometer la calidad.",
+      "pricing": "Precios Competitivos",
+      "pricing.desc": "Ofrecemos precios justos y transparentes para todos nuestros servicios. Sin cargos ocultos ni sorpresas, solo precios honestos por un trabajo de calidad."
+    },
+    "process": "Nuestro Proceso",
+    "process.description": "Seguimos un proceso simplificado para garantizar resultados de calidad y la satisfacción del cliente.",
+    "we": {
+      "follow": {
+        "streamli": "Seguimos un proceso simplificado para garantizar resultados de calidad y la satisfacción del cliente"
+      }
+    },
+    "process": {
+      "1": {
+        "title": "Consulta Inicial",
+        "description": "Comenzamos con una evaluación completa de su vehículo y discutimos sus necesidades y expectativas."
+      },
+      "2": {
+        "title": "Presupuesto Detallado",
+        "description": "Proporcionamos un presupuesto completo que describe el alcance del trabajo, el cronograma y el costo."
+      },
+      "3": {
+        "title": "Ejecución Experta",
+        "description": "Nuestros técnicos capacitados realizan el trabajo con una meticulosa atención al detalle y control de calidad."
+      },
+      "4": {
+        "title": "Inspección Final",
+        "description": "Realizamos un riguroso control de calidad para garantizar que cada aspecto del trabajo cumpla con nuestros altos estándares."
+      },
+      "5": {
+        "title": "Aprobación del Cliente",
+        "description": "Recorremos con usted el trabajo completado y aseguramos su completa satisfacción antes de la entrega."
+      }
+    },
+    "ready": {
+      "to": {
+        "started": "¿Listo para Comenzar?"
+      },
+      "get": {
+        "started": "¿Listo para Comenzar?"
+      }
+    },
+    "cta": {
+      "description": "Contáctenos hoy para programar una consulta o solicitar un presupuesto para su proyecto automotriz."
+    },
+    "contact": {
+      "us": {
+        "today": {
+          "": "Contáctenos hoy para programar una consulta o solicitar un presupuesto para su proyecto automotriz."
+        }
+      }
+    },
+    "call": {
+      "now": "Llámenos Ahora",
+      "us": {
+        "now": "Llámenos Ahora"
+      }
+    },
+    "book": {
+      "appointment": "Reservar una Cita",
+      "an": {
+        "appointment": "Reservar una Cita"
+      }
+    },
+    "features": {
+      "collision": {
+        "1": "Enderezado y alineación de bastidor",
+        "2": "Reparación y reemplazo de paneles",
+        "3": "Igualación experta de color",
+        "4": "Restauración de integridad estructural",
+        "5": "Asistencia con reclamaciones de seguros"
+      },
+      "paint": {
+        "1": "Igualación de color de fábrica",
+        "2": "Creación de colores personalizados",
+        "3": "Acabados metálicos y perlados",
+        "4": "Gráficos y pinstriping",
+        "5": "Protección de capa transparente"
+      },
+      "restoration": {
+        "1": "Restauración completa desde el bastidor",
+        "2": "Obtención de piezas auténticas",
+        "3": "Acabados correctos de la época",
+        "4": "Restauración mecánica",
+        "5": "Restauración de tapicería interior"
+      },
+      "detailing": {
+        "1": "Corrección y pulido de pintura",
+        "2": "Aplicación de recubrimiento cerámico",
+        "3": "Limpieza profunda de interiores",
+        "4": "Restauración de cuero",
+        "5": "Detallado del compartimento del motor"
+      },
+      "pickup": {
+        "1": "Programación conveniente",
+        "2": "Transporte seguro",
+        "3": "Cobertura del área de servicio",
+        "4": "Actualizaciones de estado",
+        "5": "Entrega de devolución cuando se completa"
+      },
+      "towing": {
+        "1": "Respuesta de emergencia 24/7",
+        "2": "Remolque de plataforma",
+        "3": "Recuperación de accidentes",
+        "4": "Asistencia en carretera",
+        "5": "Transporte seguro"
+      },
+      "frame": {
+        "1": "Análisis computarizado de bastidor",
+        "2": "Restauración de alineación de precisión",
+        "3": "Enderezado de monocasco",
+        "4": "Refuerzo estructural",
+        "5": "Certificación de seguridad"
+      },
+      "wheel": {
+        "1": "Reparación de daños de bordillo",
+        "2": "Refinado de superficie",
+        "3": "Acabados personalizados de ruedas",
+        "4": "Tratamiento de corrosión",
+        "5": "Pruebas de integridad estructural"
+      }
+    },
+    "our": {
+      "services": "Nuestros Servicios",
+      "process": "Nuestro Proceso"
+    },
+    "ourServices": "Nuestros Servicios",
+    "maxwidth.768px.100vw": "100vw",
+    "collision": "Reparación de Colisiones",
+    "collisionDesc": "Servicios profesionales de reparación de colisiones para todas las marcas y modelos. Restauramos su vehículo a la condición previa al accidente.",
+    "paint": "Pintura Personalizada",
+    "paintDesc": "Servicios de pintura premium con tecnología de igualación de color para un acabado impecable.",
+    "restoration": "Restauración de Vehículos",
+    "restorationDesc": "Servicios de restauración de autos clásicos que devuelven a los vehículos antiguos su gloria original.",
+    "detailing": "Detallado de Vehículos",
+    "detailingDesc": "Servicios completos de detallado para mantener su vehículo luciendo lo mejor posible por dentro y por fuera.",
+    "pickup": "Recogida y Entrega",
+    "pickupDesc": "Servicio conveniente de recogida y entrega para su vehículo.",
+    "towing": "Remolque 24/7",
+    "towingDesc": "Servicios de remolque de emergencia disponibles 24/7 para ayudarlo cuando más lo necesite.",
+    "frame": "Enderezado de Bastidor",
+    "frameDesc": "Enderezado de bastidor de precisión para restaurar la integridad estructural después de accidentes.",
+    "wheel": "Reparación de Ruedas",
+    "wheelDesc": "Servicios expertos de reparación de ruedas para restaurar ruedas dañadas a su condición original.",
+    "premiumService": "Servicio Premium"
+  },
+  "gallery": {
+    "title": "Galería",
+    "description": "Explora nuestro portafolio de proyectos completados y restauraciones automotrices",
+    "allProjects": "Todos los Proyectos",
+    "noItems": "No se encontraron elementos de galería",
+    "viewDetails": "Ver Detalles",
+    "loading": "Cargando...",
+    "errorLoading": "Error al cargar los elementos de la galería",
+    "all": "Todas las Categorías",
+    "main": "Principal",
+    "before": "Antes",
+    "after": "Después",
+    "categories": {
+      "all": "Todos",
+      "restoration": "Restauración",
+      "repair": "Reparación",
+      "customization": "Personalización",
+      "classic": "Clásico",
+      "european": "Europeo",
+      "american": "Americano",
+      "japanese": "Japonés",
+      "collision": "Colisión",
+      "paint": "Pintura",
+      "bodywork": "Carrocería",
+      "detailing": "Detallado",
+      "bf": "Antes/Después",
+      "luxury": "Lujo"
+    },
+    "tags": "Etiquetas",
+    "beforeAfterLabel": "Antes/Después",
+    "modal": {
+      "close": "Cerrar elemento de galería",
+      "previous": "Imagen anterior",
+      "next": "Siguiente imagen",
+      "image": "Imagen",
+      "beforeImages": "Imágenes de Antes",
+      "afterImages": "Imágenes de Después",
+      "details": "Detalles",
+      "year": "Año",
+      "make": "Marca",
+      "model": "Modelo",
+      "service": "Servicio Realizado"
+    },
+    "all": "Todos",
+    "main": "Principal",
+    "before": "Antes",
+    "after": "Después",
+    "tags": "Etiquetas",
+    "tags.comma.separated": "Etiquetas separadas por comas",
+    "main.image": "Imagen Principal",
+    "add": "Añadir elemento a la galería",
+    "edit": "Editar elemento de la galería",
+    "confirm.delete": "¿Está seguro de que desea eliminar este elemento?",
+    "upload": "Cargar imágenes",
+    "items": {
+      "thunderbird": {
+        "title": "Restauración Clásica del Thunderbird",
+        "description": "Restauración completa de un Thunderbird clásico, devolviendo su gloria original con una atención meticulosa al detalle."
+      },
+      "cadillac": {
+        "title": "Reparación de Cadillac Rojo",
+        "description": "Reparación precisa y refinado de este Cadillac clásico, restaurando su elegante acabado rojo a calidad de exhibición."
+      },
+      "porsche": {
+        "title": "Trabajo de Detalle en Porsche",
+        "description": "Servicio de detallado premium para este Porsche de lujo, incluyendo corrección de pintura, recubrimiento cerámico y restauración de interiores."
+      },
+      "jeep": {
+        "title": "Reparación de Jeep Negro",
+        "description": "Reparación experta de colisión en este Jeep, restaurando su funcionalidad y apariencia robusta."
+      },
+      "bmw": {
+        "title": "Reparación de BMW E90",
+        "description": "Reparación de colisión de precisión y refinado en este BMW E90, igualando perfectamente el acabado de fábrica."
+      },
+      "mercedes": {
+        "title": "Repintado de Mercedes SL550",
+        "description": "Repintado completo de este Mercedes SL550, con un acabado metálico premium de ejecución impecable."
+      },
+      "jaguar": {
+        "title": "Repintado de Jaguar",
+        "description": "Trabajo meticuloso de repintado en este Jaguar clásico, restaurando su belleza original con materiales premium."
+      },
+      "honda": {
+        "title": "Reparación de Honda Accord",
+        "description": "Reparación completa de colisión en este Honda Accord, restaurando la integridad estructural y coincidiendo perfectamente con la pintura de fábrica."
+      },
+      "bluemustang": {
+        "title": "Reparación de Mustang Azul",
+        "description": "Reparación de carrocería y corrección de pintura en este Ford Mustang, restaurando su vibrante acabado azul."
+      },
+      "bluealfa": {
+        "title": "Reparación de Alfa Romeo Azul",
+        "description": "Reparación de colisión y refinado en este Alfa Romeo, restaurando su belleza y rendimiento italiano."
+      },
+      "blueaccord": {
+        "title": "Reparación de Accord Azul",
+        "description": "Reparación integral de colisión en este Honda Accord, restaurándolo a condición de fábrica con una coincidencia perfecta de pintura."
+      },
+      "blackjeep": {
+        "title": "Reparación de Jeep Negro",
+        "description": "Reparación experta de colisión en este Jeep, restaurando su funcionalidad y apariencia robusta."
+      },
+      "mercedesrepaint": {
+        "title": "Repintado de Mercedes",
+        "description": "Servicio premium de repintado para este Mercedes de lujo, devolviendo su brillo de sala de exhibición con artesanía experta."
+      },
+      "greenmercedes": {
+        "title": "Reparación de Mercedes Verde",
+        "description": "Reparación de precisión y refinado de este Mercedes-Benz de lujo, restaurando su elegante acabado verde a calidad de exhibición."
+      }
+    },
+    "serviceCategories": "Categorías de Servicio"
+  },
+  "about": {
+    "international": "CA International",
+    "automotive": {
+      "excellence": "Excelencia Automotriz"
+    },
+    "shop": "Excelencia Automotriz",
+    "since": {
+      "1997": "Desde 1997, CA International Automotive ha sido el destino principal para excelencia automotriz en el Área de la Bahía. Lo que comenzó como un pequeño negocio familiar se ha convertido en un nombre confiable en reparación de colisiones, trabajo de pintura personalizada y restauración de autos clásicos."
+    },
+    "located": {
+      "in": {
+        "heart": "Ubicado en el corazón de San Francisco, nuestro equipo de técnicos calificados combina artesanía tradicional con tecnología de vanguardia para entregar resultados que superan las expectativas. Tratamos cada vehículo con el cuidado y la atención que merece, ya sea un automóvil de uso diario o una pieza de colección valorada."
+      }
+    },
+    "services": "Nuestros Servicios",
+    "get": {
+      "touch": "Contáctenos"
+    },
+    "our": {
+      "services": "Nuestros Servicios",
+      "stateoftheart": {
+        "facility": "Nuestras instalaciones de última generación en San Francisco"
+      },
+      "founder": "Nuestro fundador, Carlos Arteaga, comenzó con un pequeño taller de reparación en 1997. Su compromiso inquebrantable con la calidad y el servicio al cliente rápidamente le ganó una reputación entre los propietarios de vehículos de lujo en toda el Área de la Bahía. Su visión era simple: proporcionar servicios de reparación y restauración automotriz de la más alta calidad con transparencia, integridad y atención al detalle."
+    },
+    "san": {
+      "story": "Historia de San Francisco",
+      "francisco": {
+        "ca": "San Francisco, CA"
+      },
+      "skyline": "Horizonte de San Francisco"
+    },
+    "the": {
+      "journey": {
+        "that": {
+          "made": "El viaje que nos convirtió en el principal proveedor de servicios automotrices del Área de la Bahía"
+        },
+        "made": "El viaje que nos convirtió en el taller automotriz más confiable del Área de la Bahía"
+      },
+      "principles": {
+        "that": {
+          "guide": "Los principios que guían todo lo que hacemos"
+        },
+        "guide": "Los principios que guían nuestro trabajo todos los días"
+      }
+    },
+    "from": {
+      "humble": {
+        "beginnings": "De Humildes Comienzos a la Excelencia en el Área de la Bahía"
+      },
+      "beginnings": "Desde Humildes Comienzos en SF"
+    },
+    "today": {
+      "ca": {
+        "international": "Hoy, CA International Automotive ha crecido hasta convertirse en una instalación de servicio completo con un equipo de técnicos altamente calificados, pero nuestros principios fundacionales siguen siendo los mismos. Continuamos brindando servicio personalizado y calidad excepcional, combinando artesanía tradicional con tecnología de vanguardia para ofrecer resultados que superan las expectativas de nuestros clientes."
+      },
+      "international": "Hoy, CA International Automotive continúa manteniendo estos principios fundacionales, combinando artesanía tradicional con tecnología de vanguardia para entregar resultados que superen las expectativas de nuestros clientes."
+    },
+    "ready": {
+      "to": {
+        "experience": "¿Listo para Experimentar la Diferencia de CA International?"
+      },
+      "experience": "¿Listo para Experimentar la Diferencia de CA International?"
+    },
+    "whether": {
+      "you": {
+        "need": "Ya sea que necesite reparación de colisión, trabajo de pintura personalizada o restauración de autos clásicos, nuestro equipo está listo para superar sus expectativas."
+      },
+      "need": "Ya sea que necesite reparación de colisión, trabajo de pintura personalizada o restauración de autos clásicos, nuestro equipo está listo para superar sus expectativas."
+    },
+    "values": {
+      "title": "Nuestros Valores Fundamentales",
+      "subtitle": "Los principios que guían nuestro trabajo cada día",
+      "quality": {
+        "title": "Trabajo de Calidad",
+        "description": "Nunca comprometemos la calidad de nuestras reparaciones y restauraciones. Cada vehículo recibe una atención meticulosa al detalle y artesanía."
+      },
+      "trust": {
+        "title": "Confianza y Transparencia",
+        "description": "Construimos relaciones duraderas a través de una comunicación honesta, precios justos y recomendaciones de servicio transparentes."
+      },
+      "expertise": {
+        "title": "Experiencia Técnica",
+        "description": "Nuestro equipo de técnicos certificados aporta conocimientos especializados de vehículos europeos, japoneses y americanos a cada trabajo."
+      }
+    },
+    "us": "Contáctenos",
+    "contact": {
+      "us": "Contáctenos"
+    },
+    "book": {
+      "an": {
+        "appointment": "Reservar una Cita"
+      },
+      "appointment": "Reservar una Cita"
+    },
+    "ca": {
+      "international": {
+        "automotive": "Taller CA International Automotive",
+        "founder": "Fundador de CA International"
+      },
+      "automotive": "Taller CA International Automotive",
+      "founder": "Fundador de CA International"
+    },
+    "serving": {
+      "the": {
+        "bay": {
+          "area": "Sirviendo al Área de la Bahía de San Francisco con excelencia automotriz desde 1997"
+        }
+      },
+      "bay": {
+        "area": "Sirviendo al Área de la Bahía de San Francisco con excelencia automotriz desde 1997"
+      }
+    },
+    "hero": {
+      "title": "Acerca de CA International Automotive",
+      "subtitle": "Especialistas en Reparación y Restauración de Automóviles Premium en San Francisco desde 1988",
+      "bgAlt": "Taller de CA International Automotive"
+    },
+    "story": {
+      "titleHighlight": "Nuestra",
+      "title": "Historia",
+      "imageAlt": "Fachada de CA International Automotive",
+      "paragraph1": "Desde 1988, CA International Automotive se ha dedicado a proporcionar a San Francisco un cuidado automotriz excepcional. Lo que comenzó como un pequeño taller de reparación ha evolucionado a una instalación de servicio completo especializada en vehículos europeos, japoneses y americanos de alta gama.",
+      "paragraph2": "Nuestro fundador, Carlos Aroche, estableció el negocio con la visión de traer servicio de calidad europea al Área de la Bahía. Con más de 35 años de experiencia, hemos construido nuestra reputación en la experiencia técnica, el servicio honesto y un compromiso con la excelencia que continúa hasta el día de hoy.",
+      "paragraph3": "Hoy, nuestras instalaciones combinan la artesanía tradicional con la tecnología de diagnóstico moderna, lo que nos permite dar servicio tanto a coleccionables clásicos como a los últimos vehículos de lujo con el mismo nivel de precisión y cuidado."
+    },
+    "timeline": {
+      "title": "Nuestro Recorrido",
+      "subtitle": "Hitos clave en nuestra historia de excelencia automotriz",
+      "founding": {
+        "title": "Establecimiento",
+        "description": "CA International Automotive fue fundada por Carlos Aroche en el área de South of Market de San Francisco."
+      },
+      "expansion": {
+        "title": "Expansión de Servicios",
+        "description": "Ampliamos nuestros servicios para incluir cuidado especializado para vehículos europeos de lujo y restauración de autos clásicos."
+      },
+      "certification": {
+        "title": "Certificación Técnica",
+        "description": "Logramos la certificación de maestro para múltiples marcas de vehículos europeos y asiáticos."
+      },
+      "modernization": {
+        "title": "Modernización de Instalaciones",
+        "description": "Actualizamos nuestro taller con el último equipo de diagnóstico mientras mantenemos nuestros valores de artesanía tradicional."
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo Experto",
+      "subtitle": "Conozca a los profesionales calificados detrás de nuestro servicio excepcional",
+      "member1": {
+        "name": "Carlos Aroche",
+        "role": "Fundador y Técnico Maestro",
+        "bio": "Con más de 40 años de experiencia trabajando en vehículos de lujo europeos, Carlos aporta experiencia incomparable a cada proyecto."
+      },
+      "member2": {
+        "name": "María Hernández",
+        "role": "Gerente de Servicio",
+        "bio": "María asegura que cada servicio se ejecute sin problemas y que nuestros clientes reciban la experiencia excepcional que merecen."
+      },
+      "member3": {
+        "name": "David Chen",
+        "role": "Especialista en Restauración",
+        "bio": "La pasión de David por los vehículos clásicos y la atención al detalle lo convierten en nuestro experto de referencia para proyectos de restauración."
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Experimentar la Diferencia de CA International?",
+      "subtitle": "Desde mantenimiento rutinario hasta restauraciones completas, estamos aquí para proporcionar un servicio excepcional para su vehículo.",
+      "contactBtn": "Contáctenos",
+      "servicesBtn": "Ver Nuestros Servicios"
+    }
+  },
+  "contact": {
+    "1330": {
+      "avenue": "1330 Egbert Avenue",
+      "egbert": {
+        "s": "1330 Egbert Avenue, San Francisco, CA 94124",
+        "avenue": {
+          "s": "1330 Egbert Avenue, San Francisco, CA 94124"
+        }
+      }
+    },
+    "egbert": {
+      "s": "1330 Egbert Avenue, San Francisco, CA 94124",
+      "avenue": {
+        "s": "1330 Egbert Avenue, San Francisco, CA 94124"
+      }
+    },
+    "1330.egbert.avenue": "1330 Egbert Avenue, San Francisco, CA 94124",
+    "sunday.closed": "Domingo: Cerrado",
+    "email": "Correo Electrónico",
+    "415": {
+      "4474001": "(415) 447-4001"
+    },
+    "4474001": "(415) 447-4001",
+    "us": "Contacto",
+    "name": "Nombre",
+    "your": {
+      "name": "Su nombre",
+      "message": "Su mensaje"
+    },
+    "phone": {
+      "number": "Número de teléfono"
+    },
+    "phoneLabel": "Número de Teléfono",
+    "phonePlaceholder": "(XXX) XXX-XXXX",
+    "message": "Mensaje",
+    "service": {
+      "interested": {
+        "i": "Servicio de Interés"
+      },
+      "i": "Servicio de Interés"
+    },
+    "select": {
+      "a": {
+        "service": "Seleccione un Servicio"
+      },
+      "service": "Seleccione un Servicio"
+    },
+    "have": {
+      "questions": {
+        "re": "¿Tiene preguntas o está listo para programar un servicio? Nuestro equipo está aquí para ayudar. Comuníquese con nosotros utilizando el formulario a continuación o a través de nuestra información de contacto."
+      }
+    },
+    "send": {
+      "us": {
+        "a": {
+          "message": "Envíenos un mensaje"
+        }
+      },
+      "message": "Enviar mensaje"
+    },
+    "thank": {
+      "you": {
+        "for": {
+          "m": "¡Gracias por su mensaje! Nos comunicaremos con usted lo antes posible."
+        }
+      }
+    },
+    "there": {
+      "was": {
+        "an": {
+          "error": {
+            "s": "Hubo un error al enviar su mensaje. Por favor, inténtelo de nuevo o contáctenos directamente."
+          }
+        }
+      }
+    },
+    "location": "Ubicación",
+    "hours": "Horario",
+    "get": {
+      "directions": "Obtener Indicaciones"
+    },
+    "information": "Información de Contacto",
+    "questions": "Preguntas Frecuentes",
+    "contact": {
+      "information": "Información de Contacto"
+    },
+    "schedule": {
+      "an": {
+        "appointm": "Programar una Cita"
+      }
+    },
+    "book": {
+      "an": {
+        "appointment": "Reservar una Cita"
+      }
+    },
+    "need": {
+      "to": {
+        "schedule": {
+          "an": {
+            "": "¿Necesita programar una cita de inmediato? Utilice nuestro sistema de reservas en línea para un servicio más rápido."
+          }
+        }
+      }
+    },
+    "other": "Otro",
+    "specialty": "Servicios Especializados",
+    "collision": {
+      "repair": "Reparación de Colisiones"
+    },
+    "custom": {
+      "paint": "Pintura Personalizada"
+    },
+    "classic": {
+      "restoration": "Restauración Clásica"
+    },
+    "monday": {
+      "saturday": {
+        "900": {
+          "": "Lunes - Sábado: 9:00 AM - 5:00 PM"
+        }
+      }
+    },
+    "infocainternationalc": "international_auto@sbcglobal.net",
+    "well": {
+      "respond": {
+        "within": {
+          "": "Responderemos en 24 horas"
+        }
+      }
+    },
+    "san": {
+      "francisco": {
+        "ca": {
+          "941": "San Francisco, CA 94124"
+        }
+      }
+    },
+    "visit": {
+      "us": {
+        "at": {
+          "our": {
+            "san": {
+              "": "Visítenos en nuestra ubicación en San Francisco - estamos convenientemente ubicados justo al lado de la autopista 101"
+            }
+          }
+        }
+      }
+    },
+    "asked": "Preguntas Frecuentes",
+    "find": {
+      "answers": {
+        "comm": "Encuentre respuestas a preguntas comunes sobre nuestros servicios y procesos."
+      }
+    },
+    "how": {
+      "long": {
+        "does": {
+          "typi": "¿Cuánto tiempo toma una reparación típica?"
+        }
+      }
+    },
+    "do": {
+      "you": {
+        "work": {
+          "ins": "¿Trabajan con compañías de seguros?"
+        },
+        "offer": {
+          "warra": "¿Ofrecen garantía en su trabajo?"
+        }
+      }
+    },
+    "yes": {
+      "we": {
+        "work": {
+          "all": "Sí, trabajamos con todas las compañías de seguros importantes y podemos ayudar a facilitar su reclamación. Nos encargamos de la comunicación con su ajustador de seguros y garantizamos que todas las reparaciones se realicen según los altos estándares tanto de la compañía de seguros como los nuestros."
+        },
+        "provide": {
+          "": "Sí, proporcionamos presupuestos gratuitos para todos los servicios. Puede traer su vehículo a nuestro taller durante el horario comercial, programar una cita, o en algunos casos, podemos proporcionar un presupuesto preliminar basado en fotos que nos envíe."
+        }
+      }
+    },
+    "absolutely": {
+      "provid": "Absolutamente. Proporcionamos una garantía de por vida en todas las reparaciones y trabajos de pintura mientras sea propietario de su vehículo. Esta garantía cubre cualquier defecto en la mano de obra o los materiales utilizados durante el proceso de reparación."
+    },
+    "can": {
+      "i": {
+        "get": {
+          "estimat": "¿Puedo obtener un presupuesto antes de comprometerme a las reparaciones?"
+        }
+      }
+    },
+    "google": {
+      "maps": {
+        "location": "Ubicación en Google Maps de CA International Autobody"
+      },
+      "location": "Ubicación en Google Maps de CA International Autobody"
+    },
+    "map": {
+      "showing": {
+        "loca": "Mapa mostrando la ubicación de CA International Autobody",
+        "the": {
+          "loca": "Mapa mostrando la ubicación de CA International Autobody"
+        }
+      }
+    },
+    "title": "Contáctenos",
+    "subtitle": "Nosotros",
+    "description": "¿Tiene preguntas sobre nuestros servicios? Contáctenos hoy mismo.",
+    "subject": "Asunto",
+    "submit": "Enviar Mensaje",
+    "success": "¡Su mensaje ha sido enviado exitosamente!",
+    "error": "Hubo un error al enviar su mensaje. Por favor, inténtelo de nuevo.",
+    "titleStart": "Contáctenos",
+    "titleHighlight": "Hoy",
+    "formTitle": "Envíenos un Mensaje",
+    "infoTitle": "Información de Contacto",
+    "namePlaceholder": "Su Nombre",
+    "emailPlaceholder": "su.correo@ejemplo.com",
+    "emailLabel": "Correo Electrónico",
+    "messagePlaceholder": "Escriba su mensaje aquí...",
+    "sending": "Enviando...",
+    "locationLabel": "Ubicación",
+    "locationTitle": "Nuestra Ubicación",
+    "hoursLabel": "Horario",
+    "weekdays": "Lunes a Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "closed": "Cerrado",
+    "mapTitle": "Ubicación en Google Maps de CA International Autobody",
+    "check": {
+      "your": {
+        "email": {
+          "for": "Revise su correo electrónico para ver los detalles de la confirmación."
+        }
+      }
+    },
+    "openChat": "Abrir Chat",
+    "closeChat": "Cerrar Chat"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "language": "Idioma",
+    "companyDescription": "Servicios premium de reparación y restauración de automóviles de lujo y alto rendimiento.",
+    "ourServices": "Nuestros Servicios",
+    "contactUs": "Contáctenos",
+    "hoursTitle": "Horario Comercial",
+    "weekdayHours": "Lun-Vie: 8:00 AM - 6:00 PM",
+    "saturdayHours": "Sábado: 9:00 AM - 4:00 PM",
+    "sundayHours": "Domingo: Cerrado",
+    "copyright": "© 2023 CA International Automotive. Todos los derechos reservados.",
+    "tagline": "Excelencia en Reparación y Restauración Automotriz",
+    "facebook": "Visite nuestra página de Facebook",
+    "2563eb": "#2563eb",
+    "ffffff": "#ffffff"
+  },
+  "admin": {
+    "gallery": "Administrar Galería",
+    "auth": {
+      "title": "Inicio de Sesión de Administrador",
+      "username": "Nombre de Usuario",
+      "password": "Contraseña",
+      "login": "Iniciar Sesión",
+      "logout": "Cerrar Sesión",
+      "error": "Credenciales inválidas",
+      "success": "Inicio de sesión exitoso",
+      "required": "Requerido",
+      "invalidPassword": "Contraseña inválida"
+    },
+    "dashboard": {
+      "title": "Panel de Administración",
+      "welcome": "Bienvenido a tu panel",
+      "cards": {
+        "gallery": {
+          "title": "Gestión de Galería",
+          "description": "Añadir, editar o eliminar elementos y proyectos de la galería"
+        },
+        "gallerySettings": {
+          "title": "Configuración de Galería",
+          "description": "Configurar opciones de privacidad para imágenes de la galería"
+        },
+        "manage": "Gestionar"
+      }
+    },
+    "invalidPassword": "Contraseña inválida. Por favor, intente nuevamente.",
+    "access": "Acceso de Administrador",
+    "enterPassword": "Ingrese la contraseña de administrador para continuar",
+    "password": "Contraseña",
+    "login": "Ingreso de Administrador",
+    "management": "Administración de Galería",
+    "add": {
+      "edit": {
+        "or": {
+          "g": "Añadir, editar o eliminar elementos de la galería para mostrar su trabajo."
+        }
+      }
+    },
+    "calendar": "Calendario de Citas",
+    "view": {
+      "and": {
+        "cust": "Ver y administrar citas de clientes y horarios."
+      }
+    },
+    "appointments": "Administrar Citas",
+    "settings": "Configuración del Sitio Web",
+    "configure": {
+      "se": "Configurar ajustes y preferencias del sitio web."
+    },
+    "ca": {
+      "aut": "CA International Automotive"
+    },
+    "return": {
+      "homepage": "Volver a la página de inicio"
+    },
+    "authenticat": "Verificando autenticación...",
+    "translations": {
+      "management": "Gestión de Traducciones"
+    },
+    "manage": {
+      "translations": "Gestionar Traducciones",
+      "website": {
+        "translations": "Ver y editar traducciones del sitio web en todos los idiomas."
+      }
+    },
+    "title": "Panel de Administración",
+    "welcome": "Bienvenido al Panel de Administración",
+    "gallery": {
+      "title": "Gestión de Galería",
+      "addNew": "Añadir Nuevo Elemento",
+      "editItem": "Editar Elemento de Galería",
+      "settings": "Configuración de Galería",
+      "privacy": {
+        "settings": "Configuración de Privacidad de Galería"
+      }
+    },
+    "checking": {
+      "authenticat": "Verificando autenticación..."
+    },
+    "back": {
+      "to": {
+        "dashboard": "Volver al Panel"
+      }
+    },
+    "logout": "Cerrar Sesión",
+    "license": {
+      "plate": {
+        "privacy": "Privacidad de Matrícula"
+      }
+    },
+    "blur": {
+      "license": {
+        "plates": "Difuminar Matrículas en Imágenes de Galería",
+        "plates.help": "Difuminar automáticamente las matrículas en todas las imágenes de la galería para proteger la privacidad"
+      },
+      "intensity": "Intensidad de Difuminado",
+      "zones": "Editar Zonas de Difuminado de Matrículas",
+      "zone.instruction": "Arrastra para reposicionar las zonas de difuminado. Usa el controlador de redimensionamiento para ajustar el tamaño."
+    },
+    "watermark": {
+      "settings": "Configuración de Marca de Agua",
+      "text": "Texto de Marca de Agua",
+      "opacity": "Opacidad de Marca de Agua",
+      "help": "Añadir una marca de agua a todas las imágenes de la galería para proteger tu contenido"
+    },
+    "add": {
+      "watermark": "Añadir Marca de Agua a las Imágenes",
+      "zone": "Añadir Zona",
+      "zone.instruction": "Haz clic en \"Añadir Zona\" para crear una zona de difuminado sobre una matrícula"
+    },
+    "saving": "Guardando...",
+    "save": {
+      "settings": "Guardar Configuración",
+      "zones": "Guardar Zonas"
+    },
+    "loading": {
+      "gallery": {
+        "images": "Cargando imágenes de la galería..."
+      }
+    },
+    "no": {
+      "gallery": {
+        "images": "No se encontraron imágenes de galería. Primero añade imágenes a la galería."
+      }
+    },
+    "select": {
+      "image": {
+        "to": {
+          "edit": "Seleccionar una imagen para editar"
+        }
+      }
+    },
+    "remove": {
+      "selected": "Eliminar Seleccionada"
+    }
+  },
+  "common": {
+    "hello": "Hola",
+    "welcome": "Bienvenido",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "page": "Página",
+    "of": "de",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Atrás",
+    "close": "Cerrar",
+    "more": "Más",
+    "less": "Menos",
+    "show": "Mostrar",
+    "hide": "Ocultar",
+    "all": "Todos",
+    "none": "Ninguno",
+    "en": "Inglés",
+    "es": "Español",
+    "chat": "Chat",
+    "select": "Seleccionar",
+    "us": "Nosotros",
+    "send": {
+      "message": "Enviar mensaje"
+    },
+    "dismiss": "Descartar",
+    "learnMore": "Más Información",
+    "bookNow": "Reservar Ahora",
+    "switch": {
+      "to": {
+        "english": "Cambiar a inglés",
+        "spanish": "Cambiar a español"
+      }
+    },
+    "viewport": "viewport",
+    "ca": {
+      "international": {
+        "aut": "CA International Autobody"
+      },
+      "automotive": {
+        "assist": "Asistente de CA Automotive"
+      }
+    },
+    "errorOccurred": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+    "noData": "No hay datos disponibles",
+    "success": "¡Éxito!",
+    "add": "Añadir",
+    "remove": "Eliminar",
+    "created": "Creado el",
+    "updated": "Actualizado el",
+    "imageUnavailable": "Imagen no disponible",
+    "viewImage": "Ver imagen",
+    "viewDetails": "Ver Detalles",
+    "null": {
+      "messagese": "null",
+      "const": {
+        "se": "null"
+      }
+    },
+    "is": "is",
+    "online": {
+      "sup": "En línea | Soporte con IA",
+      "aipowered": {
+        "sup": "En línea | Soporte con IA"
+      }
+    },
+    "ai": "AutoBody IA",
+    "message": "Enviar mensaje",
+    "mobile": {
+      "m": "📱 Monitor de Rendimiento Móvil"
+    },
+    "measuring": "CLS: Midiendo...",
+    "waiting": "FID: Esperando...",
+    "see": {
+      "the": {
+        "bef": "Vea los dramáticos resultados de antes y después de nuestra experta artesanía. Deslice para revelar las transformaciones que hemos logrado para nuestros clientes."
+      }
+    },
+    "type": "Tipo de Servicio:",
+    "maxwidth": {
+      "100vw": "(max-width: 768px) 100vw, 50vw"
+    },
+    "an": "Reservar una",
+    "vehicle": {
+      "information": "Información del Vehículo"
+    },
+    "appointment": {
+      "details": "Detalles de la Cita"
+    },
+    "select": {
+      "service": "Seleccionar Servicio",
+      "make": "Seleccionar marca",
+      "time": "Seleccionar hora",
+      "a": {
+        "service": "Seleccione un Servicio"
+      }
+    },
+    "make": "Seleccionar marca",
+    "model": "Modelo",
+    "year": "Año",
+    "preferred": {
+      "date": "Fecha Preferida *",
+      "time": "Hora Preferida"
+    },
+    "free": {
+      "pick": {
+        "up": {
+          "deliver": "Recogida y Entrega Gratuita"
+        }
+      }
+    },
+    "complimentary": {
+      "servic": "Servicio complementario dentro de San Francisco"
+    },
+    "pick": {
+      "up": {
+        "address": "Dirección de Recogida *"
+      }
+    },
+    "your": {
+      "name": "Su nombre"
+    },
+    "additional": {
+      "informati": "Información Adicional"
+    },
+    "book": {
+      "appointment": "Reservar Cita"
+    },
+    "confirmed": "¡Reserva Confirmada!",
+    "next": {
+      "steps": "Próximos Pasos:"
+    },
+    "if": {
+      "you": {
+        "need": {
+          "to": {
+            "resch": "Si necesita reprogramar, por favor llámenos con al menos 24 horas de anticipación."
+          }
+        }
+      }
+    },
+    "arrive": {
+      "10": {
+        "minutes": {
+          "be": "Llegue 10 minutos antes de la hora programada para su cita."
+        }
+      }
+    },
+    "bring": {
+      "your": {
+        "vehicle": {
+          "r": "Traiga el registro de su vehículo e información del seguro."
+        }
+      }
+    },
+    "why": {
+      "with": "Por qué Reservar Con"
+    },
+    "experience": {
+      "the": {
+        "conve": "Experimente la comodidad y calidad que nos distingue."
+      }
+    },
+    "quick": {
+      "convenient": "Rápido y Conveniente"
+    },
+    "our": {
+      "online": {
+        "booking": {
+          "s": "Nuestro sistema de reservas en línea le permite programar su cita en minutos, a cualquier hora del día o de la noche."
+        }
+      },
+      "team": {
+        "of": {
+          "certifie": "Nuestro equipo de técnicos certificados tiene la formación y experiencia para manejar cualquier proyecto automotriz con precisión."
+        }
+      }
+    },
+    "no": {
+      "surprises": "Sin Sorpresas"
+    },
+    "well": {
+      "provide": {
+        "a": {
+          "detai": "Le proporcionaremos un presupuesto detallado antes de comenzar cualquier trabajo, para que sepa exactamente qué esperar."
+        }
+      }
+    },
+    "return": "Regresar",
+    "required": "Requerido",
+    "selectOption": "Seleccione una opción",
+    "unexpectedError": "Ha ocurrido un error inesperado. Por favor, inténtelo de nuevo.",
+    "schedule": {
+      "your": {
+        "vehicl": "Programe su servicio de vehículo en unos sencillos pasos"
+      },
+      "details": "Detalles de la Cita"
+    },
+    "confirmation": "Confirmación",
+    "service": "Servicio Experto",
+    "expert": {
+      "service": "Servicio Experto"
+    },
+    "steps": "Próximos Pasos:",
+    "autobody": {
+      "ai": "Asistente AutoBody AI"
+    },
+    "select": "Seleccionar",
+    "select.language": "Seleccionar idioma",
+    "us": "Nosotros",
+    "select.a.language": "Selecciona un idioma",
+    "select.country": "Seleccionar país",
+    "ca": {
+      "title": "CA International Autobody",
+      "description": "Servicios premium de reparación y restauración de automóviles",
+      "assist": "Asistente de CA Automotive"
+    },
+    "time": "Hora",
+    "booking": {
+      "confirmed": "¡Reserva Confirmada!"
+    }
+  },
+  "language": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "select": "Seleccionar Idioma"
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen",
+    "subtitle": "Nuestros Clientes",
+    "description": "Nos enorgullecemos de nuestro trabajo y la satisfacción de nuestros clientes. Esto es lo que dicen acerca de nosotros.",
+    "viewTestimonial": "Ver testimonio",
+    "readMore": "Leer Más Testimonios",
+    "handle": {
+      "form": {
+        "ch": "Manejar cambios"
+      }
+    },
+    "testimonials": "Testimonios de Clientes",
+    "discover": {
+      "what": {
+        "va": "Descubra lo que nuestros valiosos clientes tienen que decir sobre su experiencia con nosotros"
+      }
+    },
+    "your": {
+      "review": {
+        "been": "Su opinión ha sido enviada con éxito."
+      }
+    },
+    "we": {
+      "value": {
+        "feedba": "Valoramos su opinión. Por favor tómese un momento para compartir su experiencia con nosotros."
+      },
+      "appreciate": {
+        "f": "¡Agradecemos sus comentarios!"
+      }
+    },
+    "you": "¡Gracias!",
+    "optional": "Correo electrónico (opcional)",
+    "vehicle": "Su Vehículo",
+    "type": "Tipo de Servicio",
+    "select": {
+      "service": "Seleccione un servicio"
+    },
+    "rating": "Su Calificación",
+    "review": "Enviar Opinión",
+    "join": {
+      "our": {
+        "lis": "Únase a nuestra creciente lista de clientes satisfechos y descubra por qué somos la opción preferida para el cuidado automotriz premium."
+      }
+    },
+    "us": "Contáctenos",
+    "appointment": "Reservar Cita",
+    "testimonial": "Siguiente testimonio",
+    "currentcolor": "currentColor",
+    "httpwwww3org2000svg": "http://www.w3.org/2000/svg",
+    "client.testin": "Lo Que Dicen Nuestros Clientes",
+    "discover.what.our.va": "Descubra lo que nuestros valiosos clientes tienen que decir sobre su experiencia con nosotros",
+    "experience": "Su Experiencia",
+    "name": "Su Nombre",
+    "email.optional": "Correo Electrónico (opcional)",
+    "your.vehicle": "Su Vehículo",
+    "service.type": "Tipo de Servicio",
+    "select.a.service": "Seleccione un servicio",
+    "your.rating": "Su Calificación",
+    "your.review": "Su Opinión",
+    "contact.us": "Contáctenos",
+    "book.appointment": "Reservar Cita",
+    "join.our.growing.lis": "Únase a nuestra creciente lista de clientes satisfechos y descubra por qué somos la opción preferida para el cuidado automotriz premium."
+  },
+  "beforeAfter": {
+    "title": "Impresionantes",
+    "subtitle": "Transformaciones",
+    "beforeLabel": "Antes",
+    "afterLabel": "Después",
+    "viewMore": "Ver Más Proyectos",
+    "projects": {
+      "bmw": {
+        "title": "Reparación de Colisión BMW E90",
+        "description": "Reparación integral de colisión en un BMW E90, restaurándolo a las especificaciones de fábrica con alineación perfecta de paneles."
+      },
+      "mercedes": {
+        "title": "Corrección de Pintura Mercedes",
+        "description": "Corrección de pintura y detallado para un Mercedes-Benz con desgaste y rayones significativos."
+      },
+      "alfa": {
+        "title": "Restauración Alfa Romeo",
+        "description": "Restauración completa de un Alfa Romeo clásico, devolviendo su elegancia y rendimiento italiano."
+      }
+    }
+  },
+  "featuredCars": {
+    "title": "Vehículos en los que",
+    "subtitle": "Nos Especializamos",
+    "viewProject": "Ver Proyecto",
+    "performanceFleet": "Flota de Alto Rendimiento",
+    "featured": "Destacado",
+    "specs": {
+      "power": "Potencia",
+      "acceleration": "Aceleración",
+      "topSpeed": "Velocidad Máxima"
+    },
+    "bmwM4": {
+      "name": "BMW M4 Competition",
+      "description": "Un coupé deportivo de alto rendimiento con manejo preciso y diseño inspirado en las carreras."
+    },
+    "porsche911": {
+      "name": "Porsche 911 GT3",
+      "description": "Rendimiento enfocado en la pista con la legendaria ingeniería y dinámica de conducción de Porsche."
+    },
+    "lamborghini": {
+      "name": "Lamborghini Gallardo",
+      "description": "Superdeportivo italiano con rendimiento impresionante y estilo inconfundible."
+    },
+    "bentley": {
+      "name": "Bentley Continental Flying Spur",
+      "description": "Lujo y rendimiento excepcionales en un sedán británico artesanal."
+    },
+    "porscheCayman": {
+      "name": "Porsche Cayman",
+      "description": "Precisión de motor central y manejo equilibrado en un paquete de auto deportivo puro."
+    }
+  },
+  "return": ");\n  }\n  \n  return (",
+  "": "))}",
+  "en": "EN",
+  "es": "ES",
+  "chat": {
+    "chatboxTitle": "Chat con CA International",
+    "messageInputPlaceholder": "Escriba su mensaje aquí",
+    "send": "Enviar",
+    "waitingResponse": "Esperando respuesta...",
+    "botTyping": "CA está escribiendo...",
+    "greeting": "¡Hola! Soy el asistente virtual de CA International Autobody. ¿En qué puedo ayudarle hoy?",
+    "openChat": "Abrir Chat",
+    "closeChat": "Cerrar Chat"
+  },
+  "dismiss": "Dismiss",
+  "animate": "animate",
+  "hover": "hover",
+  "wait": "wait",
+  "hidden": "hidden",
+  "visible": "visible",
+  "exit": "exit",
+  "facebook": "Facebook",
+  "ffffff": "#ffffff",
+  "2563eb": "#2563eb",
+  "password": "password",
+  "httpwwww3org2000svg": "http://www.w3.org/2000/svg",
+  "none": "none",
+  "currentcolor": "currentColor",
+  "round": "round",
+  "viewport": "viewport",
+  "infocainternationalc": "international_auto@sbcglobal.net",
+  "collision": "Colisión",
+  "paint": "Pintura",
+  "restoration": "Restauración",
+  "detailing": "Detallado",
+  "lazy": "lazy",
+  "noreferrerwhendowngr": "no-referrer-when-downgrade",
+  "imagespreloadedcurre": ") : !imagesPreloaded[currentIndex] ? (",
+  "white": "blanco",
+  "100vw": "100vw",
+  "values": "Valores",
+  "logout": "Cerrar Sesión",
+  "appointments": "Citas",
+  "cancel": "Cancelar",
+  "description": "descripción",
+  "mainimage": "imagen-principal",
+  "image": "imagen/*",
+  "beforeimages": "imágenes-antes",
+  "afterimages": "imágenes-después",
+  "actions": "Acciones",
+  "delete": "Eliminar",
+  "80px": "80px",
+  "username": "nombre-usuario",
+  "remember": "recordar",
+  "true": "verdadero",
+  "currentpassword": "contraseña-actual",
+  "remove": "Eliminar",
+  "appointment": "Cita",
+  "confirmation": "Confirmación",
+  "make": "Marca *",
+  "model": "Modelo *",
+  "year": "Año *",
+  "us": "Nosotros",
+  "vehiclemake": "marcaVehículo",
+  "vehiclemodel": "modeloVehículo",
+  "vehicleyear": "añoVehículo",
+  "needspickup": "necesitaRecogida",
+  "pickupaddress": "direcciónRecogida",
+  "other": "otro",
+  "location": "Ubicación",
+  "hours": "Horario",
+  "questions": "Preguntas",
+  "specialty": "especialidad",
+  "afterinteractive": "despuésInteractivo",
+  "our": "Nuestro",
+  "experience": "Experiencia",
+  "name": "nombre",
+  "excellence": "Excelencia",
+  "rgba25525525503": "rgba(255,255,255,0.3)",
+  "service": "servicio",
+  "comment": "comentario",
+  "booking": {
+    "book": {
+      "appointment": "Reservar Cita"
+    },
+    "confirmed": "¡Reserva Confirmada!"
+  },
+  "featuredServices": {
+    "title": "Nuestros Servicios Premium",
+    "subtitle": "Nos especializamos en reparaciones y transformaciones de alta calidad para vehículos de lujo y clásicos.",
+    "learnMore": "Más Información",
+    "collision": "Reparación de Colisión",
+    "collisionDesc": "Servicios premium de reparación de colisiones para vehículos de lujo y alto rendimiento.",
+    "paintCorrection": "Corrección de Pintura",
+    "paintCorrectionDesc": "Servicios profesionales de refinamiento y corrección para restaurar la belleza original de su vehículo.",
+    "classicRestoration": "Restauración de Clásicos",
+    "classicRestorationDesc": "Servicios expertos de restauración para vehículos clásicos y vintage."
+  }
+}

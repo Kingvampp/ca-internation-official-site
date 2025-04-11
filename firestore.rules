@@ -1,0 +1,30 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read access to all collections for anyone
+    // Allow write access for development purposes
+    // In production, you would want to restrict this
+    match /{document=**} {
+      allow read, write: if true;
+    }
+    
+    // Gallery items
+    match /galleryItems/{itemId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    
+    // Appointments
+    match /appointments/{appointmentId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    
+    // Content
+    match /content/{contentId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+} 

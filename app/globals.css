@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 248, 249, 250;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 26, 26, 26;
+    --background-end-rgb: 10, 10, 10;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  /* Hide main site navbar and footer on admin pages */
+  body.admin-page header, 
+  body.admin-page footer,
+  body.admin-page nav[role="navigation"] {
+    display: none !important;
+  }
+
+  /* Full height for admin pages */
+  body.admin-page {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Make admin content fill the entire page */
+  body.admin-page main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent 
+    text-base font-medium rounded-md shadow-sm transition-all duration-200 focus:outline-none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-light focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-accent/90 focus:ring-2 focus:ring-offset-2 focus:ring-accent;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-gray-600 mb-12 max-w-3xl;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-gray-100 transition-colors;
+  }
+  
+  .nav-link-active {
+    @apply text-primary font-semibold;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-car overflow-hidden transition-all duration-300 hover:shadow-car-hover;
+  }
+  
+  .form-input {
+    @apply block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm 
+           ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+           focus:ring-2 focus:ring-inset focus:ring-primary
+           sm:text-sm sm:leading-6;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium leading-6 text-gray-900 mb-2;
+  }
+}
+
+/* Custom animations */
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Car specific styling */
+.car-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.car-shine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: scale(0.5) rotate(30deg) translateX(-100%);
+  }
+  100% {
+    transform: scale(0.5) rotate(30deg) translateX(100%);
+  }
+}
+
+/* Metal effect for section dividers */
+.metal-divider {
+  height: 6px;
+  background: linear-gradient(90deg, 
+    #333 0%, 
+    #CCC 20%, 
+    #FFF 50%, 
+    #CCC 80%, 
+    #333 100%
+  );
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Testimonial styles */
+.shadow-car {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.text-gold {
+  color: #FFD700;
+}
+
+.shadow-hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+} 

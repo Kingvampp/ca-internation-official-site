@@ -1,0 +1,77 @@
+/**
+ * Responsive Images CSS
+ * 
+ * These styles optimize images for mobile devices without breaking
+ * existing components or removing content.
+ */
+
+/* Mobile-specific optimizations */
+@media (max-width: 767px) {
+  /* Prevent CLS by setting aspect ratio */
+  .mobile-enhanced img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optimize cover images */
+  .mobile-enhanced .cover-image,
+  .mobile-enhanced [class*="cover"],
+  .mobile-enhanced [class*="hero"] img {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  /* Optimize gallery images */
+  .mobile-enhanced .gallery img,
+  .mobile-enhanced [class*="gallery"] img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  
+  /* Prevent layout shifts from testimonial images */
+  .mobile-enhanced .testimonial img,
+  .mobile-enhanced [class*="testimonial"] img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Better image loading for vehicles */
+  .mobile-enhanced [class*="vehicle"] img,
+  .mobile-enhanced [class*="car"] img,
+  .mobile-enhanced [class*="automobile"] img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  /* Team member images */
+  .mobile-enhanced [class*="team"] img,
+  .mobile-enhanced [class*="member"] img,
+  .mobile-enhanced [class*="staff"] img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Fix common image issues */
+.mobile-enhanced img:not([width]):not([height]) {
+  aspect-ratio: 16/9;
+}
+
+/* Responsive loading optimizations */
+@media (max-width: 767px) and (prefers-reduced-data: reduce) {
+  .mobile-enhanced img {
+    /* Use lower quality images for users with data saver mode */
+    filter: blur(0);
+  }
+}
+
+/* Development indicators */
+.dev-mode img:not([loading]) {
+  outline: 2px dashed #ef4444 !important;
+  outline-offset: 2px;
+} 

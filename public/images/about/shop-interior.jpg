@@ -1,0 +1,6 @@
+
+  <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#222222"/>
+    <rect x="100" y="100" width="1000" height="600" fill="#333333"/>
+    <text x="600" y="400" font-family="Arial" font-size="48" fill="white" text-anchor="middle">Shop Interior</text>
+  </svg>

@@ -1,0 +1,368 @@
+[
+    {
+        "id": "1",
+        "title": "Thunderbird Classic Restoration",
+        "categories": [
+            "restoration",
+            "paint",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/thunderbird-restoration/before-1-thunderbird-front.jpg",
+            "/images/gallery-page/thunderbird-restoration/before-1-thunderbird-rear.jpg",
+            "/images/gallery-page/thunderbird-restoration/before-1-thunderbird-side.jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/thunderbird-restoration/after-1-thunderbird-front.jpg",
+            "/images/gallery-page/thunderbird-restoration/After-1-thunderbird-rear.jpg",
+            "/images/gallery-page/thunderbird-restoration/after-1-thunderbird-side.jpg"
+        ],
+        "mainImage": "/images/gallery-page/thunderbird-restoration/after-1-thunderbird-front.jpg",
+        "description": "Complete restoration of a classic Thunderbird, bringing back its original glory with meticulous attention to detail.",
+        "tags": [
+            "Classic",
+            "Restoration",
+            "American",
+            "Vintage",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.thunderbird.title",
+            "description": "gallery.items.thunderbird.description"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Red Cadillac Repair",
+        "categories": [
+            "bodywork",
+            "paint",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/red-cadillac-repair/before-5-redcadillac-front.jpg",
+            "/images/gallery-page/red-cadillac-repair/before-5-redcadillac-side.jpg",
+            "/images/gallery-page/red-cadillac-repair/before-5-redcadillac-front(2).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/red-cadillac-repair/After-5-redcadillac-front.jpg",
+            "/images/gallery-page/red-cadillac-repair/After-5-redcadillac-side.jpg"
+        ],
+        "mainImage": "/images/gallery-page/red-cadillac-repair/After-5-redcadillac-front.jpg",
+        "description": "Precision repair and refinishing of this classic Cadillac, restoring its elegant red finish to showroom quality.",
+        "tags": [
+            "Cadillac",
+            "American",
+            "Classic",
+            "Paint Correction",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.cadillac.title",
+            "description": "gallery.items.cadillac.description"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Porsche Detail Work",
+        "categories": [
+            "detailing",
+            "luxury"
+        ],
+        "beforeImages": [],
+        "afterImages": [
+            "/images/gallery-page/porsche-detail/After-11-porschedetail-front.jpg",
+            "/images/gallery-page/porsche-detail/After-11-porschedetail-side.jpg",
+            "/images/gallery-page/porsche-detail/After-11-porschedetail-side(2).jpg"
+        ],
+        "mainImage": "/images/gallery-page/porsche-detail/After-11-porschedetail-front.jpg",
+        "description": "Premium detailing service for this luxury Porsche, including paint correction, ceramic coating, and interior restoration.",
+        "tags": [
+            "Porsche",
+            "Detailing",
+            "Luxury",
+            "European"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.porsche.title",
+            "description": "gallery.items.porsche.description"
+        }
+    },
+    {
+        "id": "4",
+        "title": "Mercedes SL550 Repaint",
+        "categories": [
+            "paint",
+            "luxury"
+        ],
+        "beforeImages": [],
+        "afterImages": [
+            "/images/gallery-page/mercedes-sl550-repaint/After-13-mercedessl550repaint-front.jpg",
+            "/images/gallery-page/mercedes-sl550-repaint/After-13-mercedessl550repaint-side.jpg",
+            "/images/gallery-page/mercedes-sl550-repaint/After-13-mercedessl550repaint-side(2).jpg",
+            "/images/gallery-page/mercedes-sl550-repaint/After-13-mercedessl550repaint-rear.jpg"
+        ],
+        "mainImage": "/images/gallery-page/mercedes-sl550-repaint/After-13-mercedessl550repaint-front.jpg",
+        "description": "Complete repaint of this Mercedes SL550, featuring a premium metallic finish with flawless execution.",
+        "tags": [
+            "Mercedes",
+            "Paint",
+            "Luxury",
+            "European"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.mercedes.title",
+            "description": "gallery.items.mercedes.description"
+        }
+    },
+    {
+        "id": "5",
+        "title": "Green Mercedes Repair",
+        "categories": [
+            "paint",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-front.jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-side(2).jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-rear.jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-side(3).jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-side.jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-side(4).jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-side(6).jpg",
+            "/images/gallery-page/green-mercedes-repair/before-2-greenmercedes-side(5).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/green-mercedes-repair/after-2-greenmercedes-front.jpg",
+            "/images/gallery-page/green-mercedes-repair/after-2-greenmercedes-side.jpg",
+            "/images/gallery-page/green-mercedes-repair/after-2-greenmercedes-front(2).jpg",
+            "/images/gallery-page/green-mercedes-repair/after-2-greenmercedes-side(2).jpg",
+            "/images/gallery-page/green-mercedes-repair/after-2-greenmercedes-front(3).jpg"
+        ],
+        "mainImage": "/images/gallery-page/green-mercedes-repair/after-2-greenmercedes-front.jpg",
+        "description": "Precision repair and refinishing of this luxury Mercedes-Benz, restoring its elegant green finish to showroom quality.",
+        "tags": [
+            "Mercedes",
+            "Paint",
+            "Luxury",
+            "European",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.greenmercedes.title",
+            "description": "gallery.items.greenmercedes.description"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Blue Alfa Romeo Repair",
+        "categories": [
+            "collision",
+            "bodywork",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/blue-alfa-repair/before-3-bluealfa-front.jpg",
+            "/images/gallery-page/blue-alfa-repair/before-3-bluealfa-front(2).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/blue-alfa-repair/after-3-bluealfa-front.jpg"
+        ],
+        "mainImage": "/images/gallery-page/blue-alfa-repair/after-3-bluealfa-front.jpg",
+        "description": "Front-end collision repair on this Italian sports car, perfectly matching the distinctive blue finish.",
+        "tags": [
+            "Italian",
+            "Sports Car",
+            "Collision",
+            "Color Match",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.bluealfa.title",
+            "description": "gallery.items.bluealfa.description"
+        }
+    },
+    {
+        "id": "7",
+        "title": "BMW E90 Complete Restoration",
+        "categories": [
+            "restoration",
+            "collision",
+            "paint",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/bmw-e90-repair/before-4-BmwE90-front.jpg",
+            "/images/gallery-page/bmw-e90-repair/before-4-BmwE90-side.jpg",
+            "/images/gallery-page/bmw-e90-repair/before-4-BmwE90-interior.jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/bmw-e90-repair/After-4-BmwE90-front.jpg",
+            "/images/gallery-page/bmw-e90-repair/After-4-BmwE90-side(2).jpg",
+            "/images/gallery-page/bmw-e90-repair/After-4-BmwE90-interior.jpg",
+            "/images/gallery-page/bmw-e90-repair/After-4-BmwE90-front(3).jpg",
+            "/images/gallery-page/bmw-e90-repair/After-4-BmwE90-interior(2).jpg"
+        ],
+        "mainImage": "/images/gallery-page/bmw-e90-repair/After-4-BmwE90-front.jpg",
+        "description": "Comprehensive restoration of a BMW E90, including exterior repair, interior refurbishment, and mechanical overhaul.",
+        "tags": [
+            "German",
+            "Luxury",
+            "Complete Restoration",
+            "Interior",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.bmwe90.title",
+            "description": "gallery.items.bmwe90.description"
+        }
+    },
+    {
+        "id": "8",
+        "title": "Blue Mustang Performance Car Repair",
+        "categories": [
+            "restoration",
+            "bodywork",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/blue-mustang-repair/before-8-bluemustang-side.jpg",
+            "/images/gallery-page/blue-mustang-repair/Before-8-bluemustang-side(2).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/blue-mustang-repair/after-8-bluemustang-side.jpg",
+            "/images/gallery-page/blue-mustang-repair/After-8-bluemustang-front.jpg"
+        ],
+        "mainImage": "/images/gallery-page/blue-mustang-repair/After-8-bluemustang-front.jpg",
+        "description": "Restoration of this iconic American muscle car, featuring precise bodywork and a flawless blue finish.",
+        "tags": [
+            "American",
+            "Muscle Car",
+            "Performance",
+            "Iconic",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.bluemustang.title",
+            "description": "gallery.items.bluemustang.description"
+        }
+    },
+    {
+        "id": "9",
+        "title": "Blue Honda Accord Repair",
+        "categories": [
+            "collision",
+            "bodywork",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/blue-accord-repair/Before-9-blueaccord-side.jpg",
+            "/images/gallery-page/blue-accord-repair/before-9-blueaccord-side(2).jpg",
+            "/images/gallery-page/blue-accord-repair/Before-9-blueaccord-side(3).jpg",
+            "/images/gallery-page/blue-accord-repair/before-9-blueaccord-side(4).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/blue-accord-repair/after-9-blueaccord-front.jpg",
+            "/images/gallery-page/blue-accord-repair/after-9-blueaccord-side.jpg",
+            "/images/gallery-page/blue-accord-repair/after-9-blueaccord-side(2).jpg",
+            "/images/gallery-page/blue-accord-repair/after-9-blueaccord-side(3).jpg"
+        ],
+        "mainImage": "/images/gallery-page/blue-accord-repair/after-9-blueaccord-front.jpg",
+        "description": "Comprehensive accident repair returning this family sedan to pre-accident condition with perfect panel alignment.",
+        "tags": [
+            "Japanese",
+            "Sedan",
+            "Accident",
+            "Family Car",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.blueaccord.title",
+            "description": "gallery.items.blueaccord.description"
+        }
+    },
+    {
+        "id": "10",
+        "title": "Classic Mustang Complete Rebuild",
+        "categories": [
+            "restoration",
+            "bodywork",
+            "bf"
+        ],
+        "beforeImages": [
+            "/images/gallery-page/mustang-rebuild/before-12mustangrebuild-front.jpg",
+            "/images/gallery-page/mustang-rebuild/before-12-mustangrebuild-side.jpg",
+            "/images/gallery-page/mustang-rebuild/before-12-mustangrebuild-side(2).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-front.jpg",
+            "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-front(3).jpg",
+            "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-front(4).jpg",
+            "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-side.jpg",
+            "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-side(2).jpg",
+            "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-side(3).jpg"
+        ],
+        "mainImage": "/images/gallery-page/mustang-rebuild/after-12-mustangrebuild-front.jpg",
+        "description": "Frame-off restoration of this American classic, including mechanical rebuilding and authentic detailing.",
+        "tags": [
+            "American",
+            "Classic",
+            "Rebuild",
+            "Restoration",
+            "Before/After"
+        ],
+        "translationKeys": {
+            "title": "gallery.items.mustangrebuild.title",
+            "description": "gallery.items.mustangrebuild.description"
+        }
+    },
+    {
+        "id": "11",
+        "title": "Jaguar Exotic Car Repaint",
+        "categories": ["paint", "luxury", "bf"],
+        "beforeImages": [
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-front.jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-front(2).jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-front(3).jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-front(4).jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-front(5).jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-side.jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-side(2).jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-back.jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-back(2).jpg",
+            "/images/gallery-page/jaguar-repaint/before-14-Jaguarrepaint-back(3).jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/jaguar-repaint/after-14-Jaguarrepaint-front.jpg",
+            "/images/gallery-page/jaguar-repaint/after-14-Jaguarrepaint-side.jpg",
+            "/images/gallery-page/jaguar-repaint/after-14-Jaguarrepaint-front(2).jpg",
+            "/images/gallery-page/jaguar-repaint/after-14-Jaguarrepaint-side(2).jpg",
+            "/images/gallery-page/jaguar-repaint/after-14-Jaguarrepaint-front(3).jpg"
+        ],
+        "mainImage": "/images/gallery-page/jaguar-repaint/after-14-Jaguarrepaint-front.jpg",
+        "description": "Complete repaint of this exotic Jaguar, restoring its pristine finish with meticulous attention to detail.",
+        "tags": ["Jaguar", "Exotic", "Paint", "Luxury", "Before/After"],
+        "translationKeys": {
+            "title": "gallery.items.jaguarrepaint.title",
+            "description": "gallery.items.jaguarrepaint.description"
+        }
+    },
+    {
+        "id": "12",
+        "title": "Honda Accord Repair",
+        "categories": ["collision", "bodywork", "bf"],
+        "beforeImages": [
+            "/images/gallery-page/honda-accord-repair/before-7-hondaaccord-front.jpg"
+        ],
+        "afterImages": [
+            "/images/gallery-page/honda-accord-repair/After-7-hondaaccord-front.jpg"
+        ],
+        "mainImage": "/images/gallery-page/honda-accord-repair/After-7-hondaaccord-front.jpg",
+        "description": "Precision repair and refinishing of this Honda Accord, restoring it to pre-accident condition.",
+        "tags": ["Honda", "Sedan", "Collision", "Japanese", "Before/After"],
+        "translationKeys": {
+            "title": "gallery.items.hondaaccord.title",
+            "description": "gallery.items.hondaaccord.description"
+        }
+    }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Jack M.",
+    "rating": 5,
+    "message": "Oscar is such an expert on fine Auto Repair & Detailing. That's why MB SF entrusts him with their Mercedes body work, & why I do, too. Oscar has cared for 4 Mercedes for me over 20 years. He is caring, considerate & a pro! I only go to International Motors, & you should entrust your vehicles to him, too!",
+    "car": "Mercedes-Benz",
+    "service": "Auto Repair & Detailing",
+    "status": "approved",
+    "date": "2022-01-25T18:00:00.000Z",
+    "source": "yelp",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "Susi L.",
+    "rating": 5,
+    "message": "They did a great job on a small ding on my SUV and was fast and on time as quoted. Very easy to work with and I highly recommend this business!",
+    "car": "SUV",
+    "service": "Dent Repair",
+    "status": "approved",
+    "date": "2023-07-20T22:30:00.000Z",
+    "source": "yelp",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "Robert M.",
+    "rating": 5,
+    "message": "CA International Automotive is the only place I trust with my Porsche. Their paint correction and detailing services are top-notch. They took the time to explain the process and the results exceeded my expectations.",
+    "car": "Porsche 911",
+    "service": "Vehicle Detailing",
+    "status": "approved",
+    "date": "2023-12-01T18:15:00.000Z",
+    "source": "yelp",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "Emily H.",
+    "rating": 5,
+    "message": "After a minor accident, I brought my car to CA International and they restored it perfectly. You can't even tell it was damaged! The team was professional and kept me updated throughout the process.",
+    "car": "Honda Accord",
+    "service": "Collision Repair",
+    "status": "approved",
+    "date": "2023-11-05T22:30:00.000Z",
+    "source": "yelp",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "James T.",
+    "rating": 4,
+    "message": "I had custom paint work done on my Mustang and the results are stunning. The attention to detail is remarkable. Just took off one star because it took a bit longer than initially estimated, but the quality was worth the wait.",
+    "car": "Ford Mustang",
+    "service": "Custom Paint Job",
+    "status": "approved",
+    "date": "2023-10-12T16:45:00.000Z",
+    "source": "yelp",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "Ray Eleson Chao",
+    "rating": 5,
+    "message": "I would recommend this shop for your automotive needs, whether your on a budget or not Oscar will help you. If you need a rental while your automotive is being worked on Oscar can be very helpful. I am a happy customer with the amount of work that I needed.",
+    "car": "Not specified",
+    "service": "Auto Repair",
+    "status": "approved",
+    "date": "2019-05-07T19:00:00.000Z",
+    "source": "facebook",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "Michael Chen",
+    "rating": 5,
+    "message": "Oscar and his team did an incredible job on my BMW M3. Professional service from start to finish. The paint correction work was flawless!",
+    "car": "BMW M3",
+    "service": "Paint Correction",
+    "status": "approved",
+    "date": "2023-11-15T22:30:00.000Z",
+    "source": "facebook",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "Sarah Johnson",
+    "rating": 5,
+    "message": "CA International Automotive restored my classic Thunderbird and brought it back to life. The attention to detail was amazing. Highly recommend their restoration services!",
+    "car": "Ford Thunderbird",
+    "service": "Classic Restoration",
+    "status": "approved",
+    "date": "2023-10-22T16:15:00.000Z",
+    "source": "facebook",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  },
+  {
+    "name": "David Rodriguez",
+    "rating": 4,
+    "message": "Great service and fair pricing. The team fixed all the dents on my Mercedes after a hail storm. Car looks like new again!",
+    "car": "Mercedes-Benz",
+    "service": "Dent Removal",
+    "status": "approved",
+    "date": "2023-09-18T23:45:00.000Z",
+    "source": "facebook",
+    "updatedAt": "2025-04-09T17:03:59.700Z"
+  }
+]

@@ -1,0 +1,224 @@
+/* 
+  Typography System for CA Automotive
+  This file establishes a consistent typographic hierarchy
+  across the entire website to enhance readability and visual appeal.
+*/
+
+/* Base font settings */
+:root {
+  --font-primary: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-secondary: var(--font-montserrat), sans-serif;
+  --font-accent: var(--font-montserrat), serif;
+  
+  /* Font sizes - using rem for accessibility */
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-base: 1rem;    /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+  --text-2xl: 1.5rem;   /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem;  /* 36px */
+  --text-5xl: 3rem;     /* 48px */
+  
+  /* Line heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  
+  /* Font weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* Letter spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+}
+
+/* Heading styles */
+h1, .h1 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  margin-bottom: 1.5rem;
+}
+
+h2, .h2 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  margin-bottom: 1.25rem;
+}
+
+h3, .h3 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-snug);
+  margin-bottom: 1rem;
+}
+
+h4, .h4 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-snug);
+  margin-bottom: 0.75rem;
+}
+
+h5, .h5 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-normal);
+  margin-bottom: 0.5rem;
+}
+
+h6, .h6 {
+  font-family: var(--font-secondary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-normal);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph styles */
+p, .body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 1rem;
+}
+
+/* Small text */
+small, .small {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+/* Lead paragraph */
+.lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 1.5rem;
+}
+
+/* Caption */
+.caption {
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+  color: #6b7280;
+}
+
+/* Button text */
+.btn-text {
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+/* Accent text - special styling for important elements */
+.accent-text {
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: var(--font-bold);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  h2, .h2 {
+    font-size: var(--text-2xl);
+  }
+  
+  h3, .h3 {
+    font-size: var(--text-xl);
+  }
+  
+  h4, .h4 {
+    font-size: var(--text-lg);
+  }
+  
+  .lead {
+    font-size: var(--text-base);
+  }
+}
+
+/* Link styles */
+a {
+  color: #0f766e; /* teal-700 */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0d9488; /* teal-600 */
+  text-decoration: underline;
+}
+
+/* List styling */
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Quote styling */
+blockquote {
+  font-family: var(--font-secondary);
+  font-size: var(--text-xl);
+  font-style: italic;
+  line-height: var(--leading-relaxed);
+  padding-left: 1.5rem;
+  border-left: 4px solid #0f766e; /* teal-700 */
+  margin: 1.5rem 0;
+}
+
+/* Code text */
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+/* Utility classes for alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Utility classes for text transforms */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+
+/* Utility classes for font weights */
+.font-light { font-weight: var(--font-light); }
+.font-normal { font-weight: var(--font-normal); }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold { font-weight: var(--font-bold); } 

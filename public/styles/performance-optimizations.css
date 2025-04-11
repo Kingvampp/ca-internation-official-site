@@ -1,0 +1,100 @@
+/**
+ * Performance Optimizations CSS
+ * 
+ * These styles optimize performance on mobile devices without
+ * breaking existing functionality.
+ */
+
+/* Mobile-specific optimizations */
+@media (max-width: 767px) {
+  /* Content-visibility optimizations */
+  .mobile-enhanced .optimize-visibility {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+  }
+  
+  /* Optimize off-screen content */
+  .mobile-enhanced .offscreen-content {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 1000px;
+  }
+  
+  /* Prevent layout shifts from dynamically loaded content */
+  .mobile-enhanced [data-dynamic-content] {
+    min-height: 100px;
+    position: relative;
+  }
+  
+  /* Optimize animations */
+  .mobile-enhanced * {
+    /* Use compositor-only properties for animations */
+    transition-property: opacity, transform;
+  }
+  
+  /* Optimize repaints */
+  .mobile-enhanced [class*="animate"],
+  .mobile-enhanced [class*="motion"],
+  .mobile-enhanced [class*="transition"] {
+    will-change: transform, opacity;
+    /* Restrict GPU usage after initial animation */
+    transition: will-change 0s 1s;
+  }
+  
+  /* Performance optimizations for scrolling */
+  .mobile-enhanced {
+    /* Smooth scrolling but not during touch */
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+  }
+  
+  .mobile-enhanced .scroll-container {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Optimize layers */
+  .mobile-enhanced header,
+  .mobile-enhanced footer,
+  .mobile-enhanced .sticky,
+  .mobile-enhanced .fixed {
+    /* Create new compositor layer */
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Font display optimizations */
+  .mobile-enhanced {
+    font-display: swap;
+  }
+  
+  /* Optimize images */
+  .mobile-enhanced img {
+    text-rendering: auto;
+  }
+  
+  /* Optimize interaction elements */
+  .mobile-enhanced button,
+  .mobile-enhanced a {
+    touch-action: manipulation;
+  }
+}
+
+/* Development-only indicators */
+.dev-mode [data-layout-shift] {
+  outline: 2px solid red !important;
+  position: relative;
+}
+
+.dev-mode [data-layout-shift]::before {
+  content: attr(data-layout-shift);
+  position: absolute;
+  top: -16px;
+  right: 0;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  z-index: 9999;
+} 

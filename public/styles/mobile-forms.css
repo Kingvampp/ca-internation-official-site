@@ -1,0 +1,121 @@
+/**
+ * Mobile Form Optimizations CSS
+ * 
+ * These styles enhance form usability on mobile devices without
+ * breaking existing functionality.
+ */
+
+/* Mobile-specific form optimizations */
+@media (max-width: 767px) {
+  /* Base form styling */
+  .mobile-enhanced form.mobile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Better input appearance */
+  .mobile-enhanced form.mobile-form input:not([type="checkbox"]):not([type="radio"]),
+  .mobile-enhanced form.mobile-form select,
+  .mobile-enhanced form.mobile-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d1d5db;
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Focus states */
+  .mobile-enhanced form.mobile-form input:focus,
+  .mobile-enhanced form.mobile-form select:focus,
+  .mobile-enhanced form.mobile-form textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Submit buttons */
+  .mobile-enhanced form.mobile-form input[type="submit"],
+  .mobile-enhanced form.mobile-form button[type="submit"],
+  .mobile-enhanced form.mobile-form .mobile-submit {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  /* Checkbox and radio styling */
+  .mobile-enhanced form.mobile-form input[type="checkbox"],
+  .mobile-enhanced form.mobile-form input[type="radio"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  /* Label styling */
+  .mobile-enhanced form.mobile-form label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  /* Required fields */
+  .mobile-enhanced form.mobile-form .required-field:not(:focus):invalid {
+    border-color: #ef4444;
+  }
+  
+  /* Field sets */
+  .mobile-enhanced form.mobile-form fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  /* Better iOS date inputs */
+  .mobile-enhanced form.mobile-form input[type="date"] {
+    min-height: 44px;
+  }
+  
+  /* Better select styling */
+  .mobile-enhanced form.mobile-form select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+  
+  /* Form validation styling */
+  .mobile-enhanced form.mobile-form input:not(:focus):invalid,
+  .mobile-enhanced form.mobile-form select:not(:focus):invalid,
+  .mobile-enhanced form.mobile-form textarea:not(:focus):invalid {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ef4444' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+  }
+  
+  /* Placeholder styling */
+  .mobile-enhanced form.mobile-form ::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+  }
+}
+
+/* Development-only indicators */
+.dev-mode .mobile-form input:not([type]),
+.dev-mode .mobile-form input[type="text"] {
+  outline: 2px dashed #f59e0b !important;
+  outline-offset: 2px;
+} 

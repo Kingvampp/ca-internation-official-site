@@ -1,0 +1,32 @@
+{
+  "common": {
+    "site.title": "CA International Autobody",
+    "site.name": "CA International Automotive",
+    "navigation.415.4474001": "(415) 447-4001",
+    "navigation.4474001": "(415) 447-4001",
+    "about.san.francisco.ca": "San Francisco, CA",
+  
+    "services.international": "CA International",
+    "contact.1330.egbert.s": "1330 Egbert Avenue, San Francisco, CA 94124",
+    "contact.4474001": "(415) 447-4001",
+    "contact.phonePlaceholder": "(XXX) XXX-XXXX",
+    "contact.san.francisco.ca.941": "San Francisco, CA 94124",
+    "admin.ca.aut": "CA International Automotive",
+    "common.maxwidth.100vw": "(max-width: 768px) 100vw, 50vw",
+    "testimonials.currentcolor": "currentColor",
+    "featuredCars.bmwM4.name": "BMW M4 Competition",
+    "featuredCars.porsche911.name": "Porsche 911 GT3",
+    "featuredCars.lamborghini.name": "Lamborghini Gallardo",
+    "featuredCars.bentley.name": "Bentley Continental Flying Spur",
+    "featuredCars.porscheCayman.name": "Porsche Cayman",
+    "animate": "animate",
+    "hidden": "hidden",
+    "visible": "visible",
+    "facebook": "Facebook",
+    "password": "password",
+    "currentcolor": "currentColor",
+    "viewport": "viewport",
+    "noreferrerwhendowngr": "no-referrer-when-downgrade",
+    "rgba25525525503": "rgba(255,255,255,0.3)"
+  }
+}

@@ -1,0 +1,1062 @@
+/* Custom styling for the booking calendar */
+
+/* Calendar container */
+.booking-datepicker {
+  font-family: 'Inter', system-ui, sans-serif;
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  margin: 0 auto;
+}
+
+/* Make calendar larger */
+.custom-large-calendar {
+  font-size: 1.2rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.custom-large-calendar .react-datepicker__month-container {
+  width: 100% !important;
+  float: none !important;
+}
+
+/* Month header styling */
+.booking-datepicker .react-datepicker__header {
+  background-color: #f8fafc !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+/* Current month display */
+.booking-datepicker .react-datepicker__current-month {
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  padding: 6px 0 !important;
+}
+
+/* Navigation buttons */
+.booking-datepicker .react-datepicker__navigation {
+  top: 24px;
+}
+
+.booking-datepicker .react-datepicker__navigation-icon::before {
+  border-color: #475569;
+  border-width: 3px 3px 0 0;
+  height: 12px;
+  width: 12px;
+}
+
+.booking-datepicker .react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: #2563eb;
+}
+
+/* Day names styling */
+.booking-datepicker .react-datepicker__day-names {
+  margin-top: 10px !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  width: 100% !important;
+}
+
+.booking-datepicker .react-datepicker__day-name {
+  color: #64748b !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  margin: 0 !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  line-height: 3rem !important;
+  flex: 1 !important;
+  text-align: center !important;
+}
+
+/* Day cells styling */
+.booking-datepicker .react-datepicker__month {
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+}
+
+.booking-datepicker .react-datepicker__week {
+  display: flex !important;
+  justify-content: space-around !important;
+  width: 100% !important;
+}
+
+.booking-datepicker .react-datepicker__day {
+  margin: 3px !important;
+  padding: 0 !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  line-height: 3rem !important;
+  border-radius: 8px !important;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  color: #334155 !important;
+  transition: all 0.2s ease !important;
+  flex: 1 !important;
+  text-align: center !important;
+  position: relative !important;
+}
+
+.booking-datepicker .react-datepicker__day:hover {
+  background-color: #eef2ff !important;
+  border-radius: 8px !important;
+  color: #1e40af !important;
+}
+
+.booking-datepicker .react-datepicker__day--selected {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5) !important;
+}
+
+.booking-datepicker .react-datepicker__day--keyboard-selected {
+  background-color: #dbeafe !important;
+  border-radius: 8px !important;
+  color: #1e40af !important;
+  font-weight: 600 !important;
+}
+
+/* Style for outside month days */
+.booking-datepicker .react-datepicker__day--outside-month {
+  color: #cbd5e1 !important;
+  opacity: 0.5 !important;
+}
+
+/* Status legend styling */
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.calendar-legend > button {
+  padding: 8px 16px !important;
+  border-width: 2px !important;
+  border-radius: 30px !important;
+  transition: all 0.2s ease !important;
+}
+
+.calendar-legend > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Day indicators (color dots) with enhanced visibility */
+.day-indicator-dot {
+  display: inline-block;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  margin: 0 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Calendar day with indicators */
+.calendar-day-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.calendar-day-number {
+  font-weight: 600;
+  position: relative;
+}
+
+.calendar-day-selected .calendar-day-number {
+  color: white !important;
+}
+
+.calendar-day-indicators {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+/* Enhanced status indicator dots with more vibrant colors */
+.dot-pending {
+  background-color: #facc15 !important; /* Yellow */
+  border: 1px solid #ca8a04 !important;
+  box-shadow: 0 0 3px #fef08a !important;
+}
+
+.dot-confirmed {
+  background-color: #22c55e !important; /* Green */
+  border: 1px solid #16a34a !important;
+  box-shadow: 0 0 3px #86efac !important;
+}
+
+.dot-completed {
+  background-color: #3b82f6 !important; /* Blue */
+  border: 1px solid #2563eb !important;
+  box-shadow: 0 0 3px #93c5fd !important;
+}
+
+.dot-cancelled {
+  background-color: #ef4444 !important; /* Red */
+  border: 1px solid #dc2626 !important;
+  box-shadow: 0 0 3px #fca5a5 !important;
+}
+
+/* Today highlight styling */
+.today {
+  font-weight: 800 !important;
+  position: relative;
+}
+
+.today::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Enhance today highlighting */
+.booking-datepicker .react-datepicker__day--today,
+.booking-datepicker .react-datepicker__day--today:hover {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+  font-weight: 700 !important;
+  position: relative;
+}
+
+.today:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Enhanced Calendar Days with Booking Status Colors */
+/* Days with pending bookings */
+.has-pending-bookings {
+  background-color: rgba(250, 204, 21, 0.15) !important;
+}
+
+/* Days with confirmed bookings */
+.has-confirmed-bookings {
+  background-color: rgba(34, 197, 94, 0.15) !important;
+}
+
+/* Days with completed bookings */
+.has-completed-bookings {
+  background-color: rgba(59, 130, 246, 0.15) !important;
+}
+
+/* Days with cancelled bookings */
+.has-cancelled-bookings {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Multiple booking types - stronger highlighting */
+.has-multiple-bookings {
+  background-color: rgba(148, 163, 184, 0.2) !important;
+  font-weight: 700 !important;
+}
+
+/* Booking day cards */
+.booking-day-event {
+  transition: all 0.3s ease !important;
+}
+
+.booking-day-event:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important;
+}
+
+.booking-day-event.expanded {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+  transform: translateY(-3px);
+  z-index: 10;
+}
+
+/* Status animation for updates */
+@keyframes statusChange {
+  0% { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.8); }
+  50% { box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.4); }
+  100% { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .booking-datepicker .react-datepicker__day,
+  .booking-datepicker .react-datepicker__day-name {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    line-height: 2.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-datepicker .react-datepicker__day,
+  .booking-datepicker .react-datepicker__day-name {
+    width: 2rem !important;
+    height: 2rem !important;
+    line-height: 2rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .booking-card {
+    padding: 12px !important;
+  }
+  
+  .calendar-container {
+    padding: 10px !important;
+  }
+  
+  .booking-datepicker {
+    margin-bottom: 20px !important;
+  }
+  
+  .booking-details {
+    max-height: 300px !important;
+    overflow-y: auto !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking-datepicker .react-datepicker__day,
+  .booking-datepicker .react-datepicker__day-name {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    line-height: 1.8rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .calendar-legend > div {
+    padding: 4px 8px !important;
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-datepicker .react-datepicker__day,
+  .booking-datepicker .react-datepicker__day-name {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    line-height: 1.5rem !important;
+    font-size: 0.7rem !important;
+    margin: 1px !important;
+  }
+  
+  .day-indicator-dot {
+    height: 4px !important;
+    width: 4px !important;
+    margin: 0 1px !important;
+  }
+}
+
+/* Booking cards styling */
+.booking-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border-left: 5px solid transparent;
+}
+
+.booking-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.booking-card.pending {
+  border-left-color: #f59e0b;
+}
+
+.booking-card.confirmed {
+  border-left-color: #3b82f6;
+}
+
+.booking-card.completed {
+  border-left-color: #10b981;
+}
+
+.booking-card.cancelled {
+  border-left-color: #ef4444;
+}
+
+.booking-time {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.booking-details {
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #f9fafb;
+  margin-top: 8px;
+}
+
+.booking-customer-name {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #1f2937;
+}
+
+.status-badge {
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 639px) {
+  .status-badge {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+  
+  .booking-time {
+    font-size: 0.95rem;
+  }
+  
+  .booking-customer-name {
+    font-size: 1rem;
+  }
+}
+
+/* Status badges styling */
+.status-badge {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 6px 12px !important;
+  border-width: 2px !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+}
+
+.status-badge svg {
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 6px !important;
+}
+
+/* Animation for new bookings on the selected day */
+@keyframes slide-in {
+  0% { 
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for status change */
+@keyframes statusChange {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Empty state styling */
+.empty-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  border: 1px dashed #cbd5e1;
+  min-height: 250px;
+}
+
+.empty-state-container svg {
+  width: 80px;
+  height: 80px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  color: #94a3b8;
+}
+
+.empty-state-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.empty-subtext {
+  color: #94a3b8;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Enhanced icons */
+.booking-icon {
+  min-width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+/* Interactive calendar hover effects */
+.interactive-calendar {
+  transition: opacity 0.3s ease;
+}
+
+.interactive-calendar .react-datepicker__day {
+  transition: all 0.2s;
+}
+
+.interactive-calendar .react-datepicker__day:hover {
+  transform: scale(1.15);
+  z-index: 5;
+  font-weight: 700;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Custom scrollbar for the booking list */
+.booking-list {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(203, 213, 225, 0.8) transparent;
+}
+
+.booking-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.booking-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.booking-list::-webkit-scrollbar-thumb {
+  background-color: rgba(203, 213, 225, 0.8);
+  border-radius: 6px;
+}
+
+/* Calendar hover effects */
+.calendar-hover-effect:hover:not(.calendar-day-selected) {
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* Enhance dropdown styling */
+.react-datepicker__month-select,
+.react-datepicker__year-select {
+  background-color: white !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  cursor: pointer !important;
+  width: auto !important;
+  min-width: 120px !important;
+}
+
+/* Status-specific colors */
+.status-pending {
+  border-color: #facc15 !important;
+  background-color: rgba(250, 204, 21, 0.1) !important;
+}
+
+.status-confirmed {
+  border-color: #22c55e !important;
+  background-color: rgba(34, 197, 94, 0.1) !important;
+}
+
+.status-completed {
+  border-color: #3b82f6 !important;
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+.status-cancelled {
+  border-color: #ef4444 !important;
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+/* Apply pulse animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* BookingCalendar.css - Enhanced styling */
+
+.booking-calendar-container {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Calendar styling */
+.interactive-calendar {
+  transition: opacity 0.3s ease;
+}
+
+.interactive-calendar.animate-pulse {
+  animation: calendar-pulse 0.5s ease;
+}
+
+@keyframes calendar-pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.react-datepicker {
+  font-family: inherit !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+  overflow: hidden !important;
+}
+
+.react-datepicker__header {
+  background-color: #f8fafc !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding: 12px 0 !important;
+}
+
+.react-datepicker__month {
+  margin: 0.8em !important;
+}
+
+.react-datepicker__day-name {
+  color: #64748b !important;
+  font-weight: 500 !important;
+  margin: 0.3rem !important;
+  width: 2rem !important;
+}
+
+.react-datepicker__day {
+  margin: 0.3rem !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  line-height: 2rem !important;
+  border-radius: 50% !important;
+  transition: all 0.2s ease !important;
+}
+
+.calendar-day-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.calendar-hover-effect:hover {
+  background-color: #f1f5f9;
+  transform: scale(1.05);
+}
+
+.calendar-day-selected {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.calendar-day-number {
+  margin-top: -2px;
+}
+
+.calendar-day-indicators {
+  position: absolute;
+  bottom: 2px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.day-indicator-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+/* Status filter styling */
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Booking list styling */
+.booking-list {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.booking-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.booking-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.booking-list::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+
+.booking-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  border-width: 1px;
+  border-left-width: 5px;
+  overflow: hidden;
+}
+
+.booking-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card.pending {
+  border-left-color: #facc15;
+}
+
+.booking-card.confirmed {
+  border-left-color: #22c55e;
+}
+
+.booking-card.completed {
+  border-left-color: #3b82f6;
+}
+
+.booking-card.cancelled {
+  border-left-color: #ef4444;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Empty state styling */
+.empty-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  border: 1px dashed #cbd5e1;
+  min-height: 250px;
+}
+
+.empty-subtext {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .react-datepicker__day,
+  .react-datepicker__day-name {
+    margin: 0.2rem !important;
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+    line-height: 1.7rem !important;
+  }
+}
+
+/* Custom Calendar Styles */
+.booking-datepicker {
+  width: 100% !important;
+  border: none !important;
+  font-family: inherit;
+}
+
+/* Make calendar larger */
+.custom-large-calendar {
+  font-size: 1rem !important;
+  width: 100% !important;
+}
+
+/* Improve month header styling */
+.react-datepicker__header {
+  background-color: white !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding-top: 10px !important;
+}
+
+.react-datepicker__current-month {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin-bottom: 10px !important;
+}
+
+/* Navigation buttons */
+.react-datepicker__navigation {
+  top: 12px !important;
+}
+
+/* Day names styling */
+.react-datepicker__day-name {
+  width: 2.5rem !important;
+  font-weight: 500 !important;
+  color: #6b7280 !important;
+  margin: 0.4rem !important;
+}
+
+/* Day cell styling */
+.react-datepicker__day {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  line-height: 2.5rem !important;
+  margin: 0.4rem !important;
+  border-radius: 0.5rem !important;
+  color: #4b5563 !important;
+  font-weight: 500 !important;
+}
+
+/* Hover effect */
+.react-datepicker__day:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+/* Selected day */
+.react-datepicker__day--selected {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Today's date */
+.react-datepicker__day--today {
+  font-weight: 700 !important;
+  color: #2563eb !important;
+  position: relative;
+}
+
+.react-datepicker__day--today::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+
+/* Enhanced calendar day content for better dot visibility */
+.calendar-day-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.calendar-day-selected {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.calendar-day-number {
+  display: block;
+  font-weight: inherit;
+}
+
+/* Calendar day indicators (colored dots for bookings) */
+.calendar-day-indicators {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.day-indicator-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Status-specific styling */
+.status-pending {
+  background-color: #fef3c7 !important;
+  color: #92400e !important;
+  border-color: #facc15 !important;
+}
+
+.status-confirmed {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  border-color: #22c55e !important;
+}
+
+.status-completed {
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
+  border-color: #3b82f6 !important;
+}
+
+.status-cancelled {
+  background-color: #fee2e2 !important;
+  color: #b91c1c !important;
+  border-color: #ef4444 !important;
+}
+
+/* Make status dots more prominent */
+.dot-pending {
+  background-color: #facc15 !important; /* Yellow */
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dot-confirmed {
+  background-color: #22c55e !important; /* Green */
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dot-completed {
+  background-color: #3b82f6 !important; /* Blue */
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dot-cancelled {
+  background-color: #ef4444 !important; /* Red */
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Calendar legend styling */
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .react-datepicker__day,
+  .react-datepicker__day-name {
+    width: 2rem !important;
+    height: 2rem !important;
+    line-height: 2rem !important;
+    margin: 0.2rem !important;
+  }
+  
+  .calendar-legend {
+    gap: 5px;
+  }
+}
+
+/* Specific adjustments for very small screens */
+@media (max-width: 400px) {
+  .react-datepicker__day,
+  .react-datepicker__day-name {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    line-height: 1.8rem !important;
+    margin: 0.15rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Hover effect for clickable booking cards */
+.booking-day-event {
+  transition: all 0.2s ease;
+  border-left-width: 4px;
+}
+
+.booking-day-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Style for expanded booking cards */
+.booking-day-event.expanded {
+  border-color: #93c5fd;
+  background-color: #f0f7ff;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.12);
+}
+
+/* Status-specific left borders for booking cards */
+.booking-day-event.status-pending {
+  border-left-color: #facc15;
+}
+
+.booking-day-event.status-confirmed {
+  border-left-color: #22c55e;
+}
+
+.booking-day-event.status-completed {
+  border-left-color: #3b82f6;
+}
+
+.booking-day-event.status-cancelled {
+  border-left-color: #ef4444;
+}
+
+/* Focus styles for action buttons */
+button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+} 
