@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "next build",
   "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "installCommand": "npm ci || npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
   "regions": ["sfo1"],
